@@ -129,6 +129,7 @@ def content_chars(text: str) -> str:
     text = strip_new_blocks(text)
     text = strip_line_comments(text)
     text = drop_arg_macros(text)
+    text = re.sub(r"\\(?:begin|end)\{[^}]*\}", "", text)  # 环境名整体不计
     text = re.sub(r"\\[A-Za-z]+", "", text)   # 其余命令名
     text = text.replace("\\", "")             # 控制符
     text = re.sub(r"[{}\[\]]", "", text)

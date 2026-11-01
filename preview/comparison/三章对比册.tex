@@ -1,0 +1,46 @@
+\documentclass[UTF8,10pt,a4paper,landscape]{ctexart}
+\usepackage[margin=9mm]{geometry}
+\usepackage{graphicx,xcolor,fancyhdr}
+\setCJKmainfont[AutoFakeBold=true]{Songti SC}
+\definecolor{accent}{RGB}{31,78,121}
+\definecolor{grayline}{RGB}{170,170,170}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\color{grayline}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\comparisonpair}[8]{%
+  \clearpage
+  \noindent
+  {\small\color{accent}\textbf{第 #1 章 · #2}}\hfill
+  {\footnotesize\color{grayline}左：原版（印刷第 #5 页）｜右：阅读效率版（印刷第 #8 页）}\par
+  \vspace{1.5mm}
+  \noindent
+  \begin{minipage}[t]{0.492\textwidth}
+    \centering
+    \includegraphics[page=#4,width=\linewidth,height=0.76\textheight,keepaspectratio]{#3}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.492\textwidth}
+    \centering
+    \includegraphics[page=#7,width=\linewidth,height=0.76\textheight,keepaspectratio]{#6}
+  \end{minipage}
+}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries 费曼物理学讲义 · 阅读效率改造对比册}\par\vspace{2mm}
+  {\small 第 1 章（首）· 第 26 章（中）· 第 52 章（末）｜左：原版（695 页）｜右：阅读效率版（新版式 + 三章内容改造）}
+\end{center}
+\comparisonpair{1}{原子的运动}{.cache/before.pdf}{41}{3}{.cache/after.pdf}{44}{3}
+\comparisonpair{1}{原子的运动}{.cache/before.pdf}{44}{6}{.cache/after.pdf}{49}{8}
+\comparisonpair{1}{原子的运动}{.cache/before.pdf}{48}{10}{.cache/after.pdf}{54}{13}
+\comparisonpair{1}{原子的运动}{.cache/before.pdf}{51}{13}{.cache/after.pdf}{56}{15}
+\comparisonpair{26}{光学：最短时间原理}{.cache/before.pdf}{343}{305}{.cache/after.pdf}{354}{313}
+\comparisonpair{26}{光学：最短时间原理}{.cache/before.pdf}{346}{308}{.cache/after.pdf}{358}{317}
+\comparisonpair{26}{光学：最短时间原理}{.cache/before.pdf}{350}{312}{.cache/after.pdf}{363}{322}
+\comparisonpair{26}{光学：最短时间原理}{.cache/before.pdf}{353}{315}{.cache/after.pdf}{367}{326}
+\comparisonpair{52}{物理定律的对称性}{.cache/before.pdf}{671}{633}{.cache/after.pdf}{698}{657}
+\comparisonpair{52}{物理定律的对称性}{.cache/before.pdf}{676}{638}{.cache/after.pdf}{705}{664}
+\comparisonpair{52}{物理定律的对称性}{.cache/before.pdf}{681}{643}{.cache/after.pdf}{711}{670}
+\comparisonpair{52}{物理定律的对称性}{.cache/before.pdf}{685}{647}{.cache/after.pdf}{716}{675}
+\end{document}

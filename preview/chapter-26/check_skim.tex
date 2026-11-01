@@ -1,0 +1,53 @@
+% !TEX program = xelatex
+% ============================================================
+% 单章编译检查模板（复制到 preview/chapter-N/check.tex 后使用）
+%
+% 用法：
+%   1) 把下面两处 "1" 改成你的章号：\setcounter{chapter}{章号-1}、ChapterN.tex；
+%   2) cd preview/chapter-N
+%      xelatex -interaction=nonstopmode -output-directory=build check.tex
+%      xelatex -interaction=nonstopmode -output-directory=build check.tex
+%
+% 通过标准：0 error、0 overfull、0 missing character。
+% ============================================================
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+            booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable,
+            multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+\providecommand{\numb}[1]{{~\num{#1}~}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+
+\setlength{\parindent}{2em}
+\setlength{\columnsep}{8mm}
+\graphicspath{{../../Figures/VolumeI}}
+\usetikzlibrary{arrows.meta, positioning}
+
+% —— 阅读效率版式层（必须放在导言区最后）——
+\usepackage[skim]{../../styles/readability}
+
+\begin{document}
+
+% 章号：第 1 章 → 0；第 26 章 → 25；第 52 章 → 51
+\setcounter{chapter}{25}
+
+% 改成你的章号
+\input{../../Chapters/VolumeI/Chapter26.tex}
+
+\end{document}

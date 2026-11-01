@@ -10,3 +10,4 @@
 preview/**/build/
 __pycache__/
 .DS_Store
+preview/comparison/.cache/

@@ -1,0 +1,110 @@
+[
+  {
+    "chapter": 1,
+    "title": "原子的运动",
+    "before_page": 41,
+    "after_page": 44,
+    "before_printed": 3,
+    "after_printed": 3,
+    "similarity": 0.142
+  },
+  {
+    "chapter": 1,
+    "title": "原子的运动",
+    "before_page": 44,
+    "after_page": 49,
+    "before_printed": 6,
+    "after_printed": 8,
+    "similarity": 0.628
+  },
+  {
+    "chapter": 1,
+    "title": "原子的运动",
+    "before_page": 48,
+    "after_page": 54,
+    "before_printed": 10,
+    "after_printed": 13,
+    "similarity": 0.387
+  },
+  {
+    "chapter": 1,
+    "title": "原子的运动",
+    "before_page": 51,
+    "after_page": 56,
+    "before_printed": 13,
+    "after_printed": 15,
+    "similarity": 0.373
+  },
+  {
+    "chapter": 26,
+    "title": "光学：最短时间原理",
+    "before_page": 343,
+    "after_page": 354,
+    "before_printed": 305,
+    "after_printed": 313,
+    "similarity": 0.154
+  },
+  {
+    "chapter": 26,
+    "title": "光学：最短时间原理",
+    "before_page": 346,
+    "after_page": 358,
+    "before_printed": 308,
+    "after_printed": 317,
+    "similarity": 0.618
+  },
+  {
+    "chapter": 26,
+    "title": "光学：最短时间原理",
+    "before_page": 350,
+    "after_page": 363,
+    "before_printed": 312,
+    "after_printed": 322,
+    "similarity": 0.721
+  },
+  {
+    "chapter": 26,
+    "title": "光学：最短时间原理",
+    "before_page": 353,
+    "after_page": 367,
+    "before_printed": 315,
+    "after_printed": 326,
+    "similarity": 0.509
+  },
+  {
+    "chapter": 52,
+    "title": "物理定律的对称性",
+    "before_page": 671,
+    "after_page": 698,
+    "before_printed": 633,
+    "after_printed": 657,
+    "similarity": 0.102
+  },
+  {
+    "chapter": 52,
+    "title": "物理定律的对称性",
+    "before_page": 676,
+    "after_page": 705,
+    "before_printed": 638,
+    "after_printed": 664,
+    "similarity": 0.901
+  },
+  {
+    "chapter": 52,
+    "title": "物理定律的对称性",
+    "before_page": 681,
+    "after_page": 711,
+    "before_printed": 643,
+    "after_printed": 670,
+    "similarity": 0.775
+  },
+  {
+    "chapter": 52,
+    "title": "物理定律的对称性",
+    "before_page": 685,
+    "after_page": 716,
+    "before_printed": 647,
+    "after_printed": 675,
+    "similarity": 1.0
+  }
+]

@@ -105,7 +105,7 @@ def compute(chapter: int, orig_ref: str, orig_file: str | None):
     orig_blocks = [b for b in top_blocks(orig_plain) if cjk(b) > 0]
     orig_lens = [cjk(b) for b in orig_blocks]
 
-    optional = "\n".join(re.findall(r"\\begin\{optional\}(.*?)\\end\{optional\}", body, flags=re.S))
+    optional = "\n".join(re.findall(r"\\begin\{optional\}(.*?)\\end\{optional\}", new_raw, flags=re.S))
     body_chars = cjk(body)
     return {
         "chapter": chapter,
@@ -128,9 +128,11 @@ def compute(chapter: int, orig_ref: str, orig_file: str | None):
         "pullquote": len(re.findall(r"\\pullquote\{", body)),
         "aside": len(re.findall(r"\\aside\{", body)),
         "fighint": len(re.findall(r"\\fighint\{", new_text)),
-        "summarybox": len(re.findall(r"\\begin\{summarybox\}", body)),
-        "conceptmap": len(re.findall(r"\\begin\{conceptmap\}", body)),
-        "optional_paras": len(re.findall(r"\\begin\{optional\}", body)),
+        "summarybox": len(re.findall(r"\\begin\{summarybox\}", new_text)),
+        "conceptmap": len(re.findall(r"\\begin\{conceptmap\}", new_text)),
+        "new_tables": len(re.findall(r"\\begin\{table\}|\\begin\{longtable\}", new_text)),
+        "new_figures": len(re.findall(r"\\begin\{figure\}|\\begin\{wrapfigure\}", new_text)),
+        "optional_paras": len(re.findall(r"\\begin\{optional\}", new_raw)),
         "optional_cjk": cjk(optional),
         "figures": len(re.findall(r"\\begin\{figure\}|\\begin\{wrapfigure\}", body)),
         "tables": len(re.findall(r"\\begin\{table\}|\\begin\{longtable\}", body)),
@@ -169,7 +171,8 @@ def main() -> int:
         f"| 引文 `\\pullquote` | 0 | {d['pullquote']} |",
         f"| 页边注 `\\aside` | 0 | {d['aside']} |",
         f"| 小结框 `summarybox` | 0 | {d['summarybox']} |",
-        f"| 新增概念图 | 0 | {d['conceptmap']} |",
+        f"| 新增概念图 / 新增图 | 0 | {d['conceptmap']} / {d['new_figures']} |",
+        f"| 新增表 | 0 | {d['new_tables']} |",
         f"| 新增文字（汉字） | 0 | {d['new_cjk']}（占原文 {d['new_ratio']:.1%}） |",
         f"| 选读 `optional` | 0 | {d['optional_paras']} 段 / {d['optional_cjk']} 字 |",
         f"| 图 / 表 | {d['figures']} / {d['tables']} | {d['figures']} / {d['tables']} |",

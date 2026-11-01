@@ -97,15 +97,20 @@ def main() -> int:
     outdir.mkdir(parents=True, exist_ok=True)
     chapters = [int(x) for x in args.chapters.split(",")]
 
-    # 1) 从原版 .toc 解析全部章起始印刷页（按出现顺序编号 1..N）
-    toc = before.parent / "Feynman Lectures on Physics.toc"
-    if not toc.exists():
-        raise SystemExit(f"找不到 {toc}")
-    toc_txt = toc.read_text(encoding="utf-8", errors="ignore")
-    starts = [int(m.group(1)) for m in re.finditer(r"\\contentsline \{chapter\}\{.*?\}\{(\d+)\}", toc_txt)]
-    if len(starts) < max(chapters):
-        raise SystemExit(f"toc 只解析到 {len(starts)} 章")
-    print("章起始印刷页（前 5 章）:", starts[:5], "… 第 52 章:", starts[51] if len(starts) > 51 else "?")
+    # 1) 从两版 .toc 解析全部章起始印刷页（按出现顺序编号 1..N）
+    def parse_starts(toc_path: Path):
+        if not toc_path.exists():
+            raise SystemExit(f"找不到 {toc_path}")
+        txt = toc_path.read_text(encoding="utf-8", errors="ignore")
+        return [int(m.group(1)) for m in re.finditer(
+            r"\\contentsline \{chapter\}\{.*?\}\{(\d+)\}", txt)]
+
+    starts = parse_starts(before.parent / "Feynman Lectures on Physics.toc")
+    starts_after = parse_starts(after.parent / "Feynman Lectures on Physics.toc")
+    if len(starts) < max(chapters) or len(starts_after) < max(chapters):
+        raise SystemExit("toc 解析章数不足")
+    print("章起始印刷页（原版，前 5）:", starts[:5], "… 第 52 章:", starts[51])
+    print("章起始印刷页（新版，前 5）:", starts_after[:5], "… 第 52 章:", starts_after[51])
 
     # 2) 计算 offset（PDF 页 - 印刷页）
     off_b = page_offset(before)
@@ -119,15 +124,20 @@ def main() -> int:
         b_start = starts[ch - 1] + off_b
         b_next = (starts[ch] if ch < len(starts) else total_pages_b - off_b) + off_b
         b_end = min(b_next - 1, total_pages_b)
-        a_start = starts[ch - 1] + off_a
-        a_next = (starts[ch] if ch < len(starts) else pdf_pages(after) - off_a) + off_a
+        a_start = starts_after[ch - 1] + off_a
+        a_next = (starts_after[ch] if ch < len(starts_after) else pdf_pages(after) - off_a) + off_a
         a_end = min(a_next - 1, pdf_pages(after))
         span = max(1, b_end - b_start)
         samples = sorted({b_start, b_start + span // 3, b_start + 2 * span // 3, max(b_start, b_end - 1)})
         a_texts = {p: cjk_bigrams(page_text(after, p)) for p in range(a_start, a_end + 1)}
-        for bpage in samples:
+        for idx, bpage in enumerate(samples):
             bt = cjk_bigrams(page_text(before, bpage))
-            apage, score = max(((p, jaccard(bt, t)) for p, t in a_texts.items()), key=lambda x: x[1])
+            if idx == 0:
+                # 第一对固定为两版「章首页」，便于评审看导读框/标题样式
+                apage = a_start
+                score = jaccard(bt, a_texts.get(apage, set()))
+            else:
+                apage, score = max(((p, jaccard(bt, t)) for p, t in a_texts.items()), key=lambda x: x[1])
             pairs.append({
                 "chapter": ch, "title": titles[ch],
                 "before_page": bpage, "after_page": apage,
@@ -138,17 +148,20 @@ def main() -> int:
 
     (outdir / "pairs.json").write_text(json.dumps(pairs, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 3) 复制 PDF 为简单文件名（避免空格路径问题）
+    # 3) 复制 PDF 到 .cache/（简单文件名，避免空格路径问题；.cache 不提交）
     import shutil
-    shutil.copy2(before, outdir / "before.pdf")
-    shutil.copy2(after, outdir / "after.pdf")
+    cache = outdir / ".cache"
+    cache.mkdir(exist_ok=True)
+    shutil.copy2(before, cache / "before.pdf")
+    shutil.copy2(after, cache / "after.pdf")
 
     # 4) 生成对比册 TeX
     body = []
     for pr in pairs:
         body.append(
-            "\\comparisonpair{%s}{%d}{%d}{before.pdf}{%d}{after.pdf}{%d}"
-            % (pr["title"], pr["before_printed"], pr["after_printed"], pr["before_page"], pr["after_page"])
+            "\\comparisonpair{%d}{%s}{.cache/before.pdf}{%d}{%d}{.cache/after.pdf}{%d}{%d}"
+            % (pr["chapter"], pr["title"], pr["before_page"], pr["before_printed"],
+               pr["after_page"], pr["after_printed"])
         )
     tex = r"""\documentclass[UTF8,10pt,a4paper,landscape]{ctexart}
 \usepackage[margin=9mm]{geometry}
@@ -158,24 +171,24 @@ def main() -> int:
 \definecolor{grayline}{RGB}{170,170,170}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[C]{\small\color{grayline}第 \thepage\ 页 / 原版（左） vs 阅读效率版（右）}
+\fancyfoot[C]{\small\color{grayline}\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-\newcommand{\comparisonpair}[7]{%
+\newcommand{\comparisonpair}[8]{%
   \clearpage
   \noindent
-  \begin{minipage}[t]{0.487\textwidth}
+  {\small\color{accent}\textbf{第 #1 章 · #2}}\hfill
+  {\footnotesize\color{grayline}左：原版（印刷第 #5 页）｜右：阅读效率版（印刷第 #8 页）}\par
+  \vspace{1.5mm}
+  \noindent
+  \begin{minipage}[t]{0.492\textwidth}
     \centering
-    {\small\color{accent}\textbf{原版}（印刷第 #2 页）}\par\vspace{1mm}
-    \includegraphics[page=#5,width=\linewidth,height=0.80\textheight,keepaspectratio]{#4}
+    \includegraphics[page=#4,width=\linewidth,height=0.76\textheight,keepaspectratio]{#3}
   \end{minipage}\hfill
-  \begin{minipage}[t]{0.487\textwidth}
+  \begin{minipage}[t]{0.492\textwidth}
     \centering
-    {\small\color{accent}\textbf{阅读效率版}（印刷第 #3 页）}\par\vspace{1mm}
-    \includegraphics[page=#7,width=\linewidth,height=0.80\textheight,keepaspectratio]{#6}
+    \includegraphics[page=#7,width=\linewidth,height=0.76\textheight,keepaspectratio]{#6}
   \end{minipage}
-  \vspace{1mm}
-  \begin{center}\small 第 #1 章 · 对照（原版 #2 / 新版 #3）\end{center}
 }
 
 \begin{document}
