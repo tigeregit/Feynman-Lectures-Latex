@@ -294,6 +294,8 @@
 
 %% 图注来源：行内小号灰字，可放在 \caption 内或框内
 \newcommand{\figsource}[1]{{\footnotesize\color{rdgray}（来源：#1）}}
+%% 读图提示：附在图注后的一句"看什么"（新增文字，须用 %<<<NEW 标记包住）
+\newcommand{\fighint}[1]{{\footnotesize\color{rdgray}（读图提示：#1）}}
 
 %% 页边注：小号灰字、靠正文；宽度受 marginparwidth 保护，不会溢出页面
 \renewcommand*{\marginfont}{\footnotesize\raggedright\color{rdgray}}

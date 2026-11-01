@@ -1,6 +1,8 @@
 # 阅读效率提升 · 交付索引（分支 `feat/reading-efficiency`）
 
-本目录是《费曼物理学讲义》中文 LaTeX 版「阅读效率提升」的方案与证据汇总。**正文尚未改动**——本分支只交付：方案、可复现审计、样式原型、内容试点样张。
+本目录是《费曼物理学讲义》中文 LaTeX 版「阅读效率提升」的方案与证据汇总。
+
+**当前状态（2026-11-01 评审后）**：方案已通过；版式层已接入主文件（全书 718 页，+3.31%）；内容层按评审决定先做**第 1 章（首）、第 26 章（中）、第 52 章（末）**三章试点，并产出「原版 vs 阅读效率版」对比册。其余章节正文未改。
 
 ## 1. 先看什么
 
@@ -10,6 +12,8 @@
 | 2 | [../preview/content-pilot/ch2-pilot.pdf](../preview/content-pilot/ch2-pilot.pdf) | 内容层样张（第 2 章 §2-1/§2-3，9 页，零删字） |
 | 3 | [../preview/style-demo/style-demo-before.pdf](../preview/style-demo/style-demo-before.pdf) / [style-demo.pdf](../preview/style-demo/style-demo.pdf) | 版式层前后对比样张（同一正文，原版 8 页 / 新版 14 页） |
 | 4 | [figures/](figures/) | 前后对比截图（内容层 2 张、版式层 3 组 + 元素一览） |
+| 5 | [../preview/comparison/三章对比册.pdf](../preview/comparison/三章对比册.pdf) | **首/中/末三章：原版（左）vs 阅读效率版（右）并排对比册** |
+| 6 | [试点三章改造规范.md](试点三章改造规范.md) | 三章改造的硬约束、配额、零删改标记法与校验流程 |
 
 ## 2. 审计与报告
 
@@ -19,6 +23,7 @@
 | [analysis/visual/](analysis/visual/) | 插图审计 + 34 条可视化候选 + 8 个图表替代实例 + 复用建议 | 110/290 节无图；343 条图注中 74.6% 只是文件名；65 处硬编码图号 |
 | [analysis/typography/](analysis/typography/) | 版式实测、样式包设计、全书试编译 | 版式层实测 718 页（+3.31%）、0 error、Underfull 187→0 |
 | [analysis/pilot-notes.md](analysis/pilot-notes.md) | 第 2 章试点说明 | 零删字 PASS；§2-1 段均 221.8→87.1；§2-3 508.2→108.9 |
+| [analysis/chapter-1-notes.md](analysis/chapter-1-notes.md) 等 | 三章改造说明（chapter-1/26/52-notes.md） | 零删改校验、统计、复核点 |
 
 ## 3. 可复现工具
 
@@ -28,6 +33,16 @@ python3 tools/audit_text.py
 
 # 图示审计（约 4 秒，需要 pdfinfo）
 python3 tools/audit_figures.py
+
+# 三章零删改校验 + 改造统计
+python3 tools/verify_chapter.py 1        # 章号 1/26/52；PASS 才算通过
+python3 tools/chapter_stats.py 1
+
+# 生成「原版 vs 阅读效率版」对比册（需先构建两版全书 PDF）
+python3 tools/make_comparison.py \
+  --before "_attachments/build-feynman/Feynman Lectures on Physics.pdf" \
+  --after  "_attachments/build-feynman/reading-efficiency/Feynman Lectures on Physics.pdf" \
+  --out    preview/comparison
 
 # 内容样张编译（需 XeLaTeX）
 cd preview/content-pilot && xelatex -interaction=nonstopmode ch2-pilot.tex   # 连编 2 遍
