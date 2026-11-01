@@ -1,0 +1,366 @@
+%% =====================================================================
+%%  readability.sty —— 《费曼物理学讲义》中文版「阅读效率」版式层
+%%  ---------------------------------------------------------------------
+%%  设计目标：不修改正文，只通过版式提升可读性：
+%%    · 段落之间留白（parskip），标题层级清晰（titlesec）
+%%    · 强调体系可辨（\term / \keyidea / \uwave 重定义）
+%%    · 导读框、小结框、关键概念框、页边注等结构化元素
+%%    · 图注、页眉、超链接、书签统一
+%%
+%%  用法（必须放在导言区最后一行，且文档 class 用 ctexbook）：
+%%    \documentclass[UTF8,12pt,a4paper,twoside]{ctexbook}
+%%    ... 其他宏包 / 字体设置 ...
+%%    \usepackage[mode=color]{readability}     % 或者 mode=mono
+%%    \begin{document}
+%%
+%%  选项：
+%%    mode=color  彩色版（默认）：强调色 + 浅灰底框
+%%    mode=mono   黑白打印版：所有颜色降为灰阶，链接纯黑
+%%    skim        速读版：optional 环境整体隐藏；optional 之外的导读框保留
+%%    screen      屏幕阅读：行距 +3%（1.30 -> 1.34），其余同 color
+%%
+%%  对外接口（正文只准用这些宏，禁止手写样式）：
+%%    \runin{段内小标题}        段首小标题，加粗+强调色+「．」后接正文
+%%    \term{术语}               术语首次出现：加粗（预留索引占位）
+%%    \enterm{English}          英文对照：小号英文
+%%    \keyidea{关键句}          行内关键句：左侧短色条+加粗
+%%    \pullquote{引文}          楷体引文块，上下细线
+%%    summarybox[标题]          小结框（浅灰底+左侧色条；默认标题「小结」）
+%%    keybox{标题}              关键概念框
+%%    optional                  选读内容（skim 模式隐藏；正常模式带灰色「〔选读〕」）
+%%    \aside{页边注}            小号灰字页边注（靠近正文）
+%%    \chapterintro{内容}       章首导读框（默认标题「本章导读」）
+%%    \readingpath{内容}        阅读路径提示
+%%    \figsource{来源}          图注来源（行内小号灰字「（来源：…）」）
+%%    conceptmap[标题]          概念图占位框（内放 TikZ 即可；默认标题「概念图」）
+%%
+%%  兼容性：ctexbook / siunitx / chemfig / booktabs / float / amsmath /
+%%    mathtools / tikz / longtable / multicol / pdfpages / setspace /
+%%    tabularx / wrapfig / caption / placeins / hyperref / ulem 均已实测共存；
+%%    \uwave、\ref、表格、chemfig 不受破坏（\uwave 仅重定义为更清晰的下划线）。
+%% =====================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{readability}[2026/11/01 v1.0 Feynman Chinese readability layer]
+
+%% ---------------------------------------------------------------
+%% 1. 选项
+%% ---------------------------------------------------------------
+\newif\ifrd@color   \rd@colortrue
+\newif\ifrd@skim
+\newif\ifrd@screen
+\DeclareOption{mode=color}{\rd@colortrue}
+\DeclareOption{mode=mono}{\rd@colorfalse}
+\DeclareOption{skim}{\rd@skimtrue}
+\DeclareOption{screen}{\rd@screentrue}
+\DeclareOption*{\PackageWarning{readability}{Unknown option `\CurrentOption', ignored}}
+\ProcessOptions\relax
+
+%% ---------------------------------------------------------------
+%% 2. 依赖（按需加载，已加载过的宏包不会重复加载）
+%% ---------------------------------------------------------------
+\RequirePackage{xcolor}
+\RequirePackage{geometry}
+\RequirePackage{etoolbox}
+\RequirePackage{ulem}
+\IfFileExists{xeCJKfntef.sty}{\RequirePackage{xeCJKfntef}}{}
+\RequirePackage{titlesec}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\RequirePackage{marginnote}
+\RequirePackage{fancyhdr}
+\RequirePackage{caption}
+\RequirePackage{bookmark}
+\RequirePackage{hyperref}
+
+%% ---------------------------------------------------------------
+%% 3. 配色（color / mono 两套）
+%% ---------------------------------------------------------------
+\ifrd@color
+  \definecolor{rdaccent}{RGB}{31,78,121}      % 主强调色：深蓝
+  \definecolor{rdaccentii}{RGB}{150,90,40}    % 次强调色：赭石
+  \definecolor{rdgray}{RGB}{96,96,96}         % 灰字
+  \definecolor{rdlight}{RGB}{244,245,247}     % 框底色
+  \definecolor{rdline}{RGB}{210,216,224}      % 细线
+  \definecolor{rdwave}{RGB}{31,78,121}        % 下划线色
+  \definecolor{rdlink}{RGB}{26,74,132}        % 超链接色
+\else
+  \definecolor{rdaccent}{RGB}{35,35,35}
+  \definecolor{rdaccentii}{RGB}{55,55,55}
+  \definecolor{rdgray}{RGB}{90,90,90}
+  \definecolor{rdlight}{RGB}{240,240,240}
+  \definecolor{rdline}{RGB}{160,160,160}
+  \definecolor{rdwave}{RGB}{0,0,0}
+  \definecolor{rdlink}{RGB}{0,0,0}
+\fi
+
+%% 中文字体辅助：楷体 / 黑体（找不到则退回正文宋体，绝不报错）
+\newcommand{\rd@kaishu}{}
+\newcommand{\rd@heiti}{}
+\@ifundefined{setCJKfamilyfont}{}{%
+  \IfFontExistsTF{STKaiti}{%
+    \setCJKfamilyfont{rdkaiti}{STKaiti}%
+    \renewcommand{\rd@kaishu}{\CJKfamily{rdkaiti}}}{%
+    \IfFontExistsTF{Kaiti SC}{%
+      \setCJKfamilyfont{rdkaiti}{Kaiti SC}%
+      \renewcommand{\rd@kaishu}{\CJKfamily{rdkaiti}}}{}}%
+  \IfFontExistsTF{STHeiti}{%
+    \setCJKfamilyfont{rdheiti}{STHeiti}%
+    \renewcommand{\rd@heiti}{\CJKfamily{rdheiti}}}{%
+    \IfFontExistsTF{Heiti SC}{%
+      \setCJKfamilyfont{rdheiti}{Heiti SC}%
+      \renewcommand{\rd@heiti}{\CJKfamily{rdheiti}}}{}}%
+}
+% 标题字体：中文黑体；拉丁字符沿用正文字体（Times，含希腊字母），
+% 避免 \sffamily 落到 lmsans 缺字（例如章节标题中的 ω）
+\newcommand{\rd@headfont}{\normalfont\rd@heiti}
+% 引文字体：楷体
+\newcommand{\rd@quotefont}{\normalfont\rd@kaishu}
+
+%% ---------------------------------------------------------------
+%% 4. 版面：行宽 161mm（≈38.0 汉字），行距保持 1.30（不膨胀页数），
+%%    外侧留 28mm 白边以容纳 24mm 页边注
+%% ---------------------------------------------------------------
+\geometry{a4paper,twoside,bindingoffset=0mm,
+  textheight=676.04pt,        % 与基线版一致：237.6mm
+  inner=21mm,outer=28mm,     % 21+161+28 = 210mm，行宽 161mm ≈ 38.0 汉字
+  top=23.7mm,                % 与基线版一致
+  marginparwidth=24mm,marginparsep=2.5mm, % 外侧白边 28mm，页边注 24mm 不越界
+  headheight=14pt,headsep=6.1mm,footskip=10mm}
+\setlength{\marginparpush}{6pt}
+
+% 行距：基线 1.30；screen 选项仅 +3%（1.34），避免页数膨胀
+\ifrd@screen
+  \linespread{1.34}
+\else
+  \linespread{1.30}
+\fi
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.30em plus 0.06em minus 0.03em}
+
+% 断行容忍：与主文件基线一致，减少 Overfull
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+% 孤行/寡行控制 + 不强行对齐页底（避免拉伸出大空隙）
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=5000
+\raggedbottom
+
+% 浮动体参数：让图更愿意留在正文附近
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.78}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{0pt}
+
+% 表格略放松（避免表格行贴着横线）
+\renewcommand{\arraystretch}{1.12}
+
+%% ---------------------------------------------------------------
+%% 5. 标题层级（titlesec）
+%% ---------------------------------------------------------------
+% 章：居中，章号（中文数字）+ 章名 + 下方短色条
+\titleformat{\chapter}[display]
+  {\centering\normalfont\rd@headfont}
+  {\color{rdaccent}\large 第\chinese{chapter}章}
+  {0.55em}
+  {\Huge\bfseries}
+  [{\vspace{1.05em}\color{rdaccent}\rule{56pt}{1.2pt}}]
+\titlespacing*{\chapter}{0pt}{-6pt}{40pt}
+
+% 节：左对齐，编号强调色，标题黑色
+\titleformat{\section}[hang]
+  {\normalfont\rd@headfont\large\bfseries}
+  {\color{rdaccent}\thesection}
+  {0.55em}
+  {}
+\titlespacing*{\section}{0pt}{2.4ex plus .3ex minus .2ex}{1.1ex}
+
+% 小节：左对齐，编号强调色，字号减一档
+\titleformat{\subsection}[hang]
+  {\normalfont\rd@headfont\normalsize\bfseries}
+  {\color{rdaccent}\thesubsection}
+  {0.55em}
+  {}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .2ex minus .1ex}{0.8ex}
+
+% 段内小标题：加粗 + 强调色 +「．」，随正文同段起排
+\newcommand{\runin}[1]{%
+  \par\addvspace{0.12em}%
+  \noindent{\rd@headfont\bfseries\color{rdaccent}#1}．\hspace{0.35em}\ignorespaces}
+
+%% ---------------------------------------------------------------
+%% 6. 强调体系
+%% ---------------------------------------------------------------
+% 术语：加粗（预留索引占位；如需索引可改为 \textbf{#1}\index{#1}）
+\newcommand{\term}[1]{\textbf{#1}}
+% 英文对照：小号英文
+\newcommand{\enterm}[1]{{\small #1}}
+% 关键句：行内，左侧短竖线 + 加粗（不断段）
+\newcommand{\keyidea}[1]{%
+  \leavevmode
+  {\color{rdaccent}\rule[-0.26em]{2.2pt}{1.12em}}%
+  \hspace{0.35em}\textbf{#1}}
+% 引文：楷体 + 上下细线
+\newcommand{\pullquote}[1]{%
+  \par\addvspace{0.85em}%
+  \begingroup
+    \leftskip=2em \rightskip=2em
+    \noindent{\color{rdline}\rule{\dimexpr\linewidth-4em\relax}{0.5pt}}%
+    \par\nobreak\vspace{0.5em}%
+    {\rd@quotefont\small\color{rdgray!40!black}#1\par}%
+    \vspace{0.5em}%
+    \noindent{\color{rdline}\rule{\dimexpr\linewidth-4em\relax}{0.5pt}}%
+  \endgroup
+  \par\addvspace{0.7em}}
+
+% 兼容层：把「几乎不可见」的 \uwave 重定义为清晰可见的细下划线
+% （正文里 455 处 \uwave 无需改动；黑白版为黑色细线）
+\ifcsname CJKunderline\endcsname
+  \renewcommand{\uwave}[1]{\CJKunderline[format=\color{rdwave}]{#1}}
+\fi
+
+%% ---------------------------------------------------------------
+%% 7. 结构化环境（tcolorbox）
+%% ---------------------------------------------------------------
+\tcbset{
+  rdsummary/.style={
+    enhanced,breakable,
+    colback=rdlight,colframe=rdlight,boxrule=0pt,
+    left=10pt,right=10pt,top=7pt,bottom=7pt,
+    borderline west={2.6pt}{0pt}{rdaccent},
+    coltitle=rdaccent,colbacktitle=rdlight,
+    fonttitle=\small\rd@headfont\bfseries,
+    before skip=0.9em,after skip=0.9em,
+    arc=0pt,outer arc=0pt,
+  },
+  rdkeybox/.style={
+    enhanced,breakable,
+    colback=rdaccent!5!white,colframe=rdaccent!28!white,
+    boxrule=0.6pt,arc=1.1mm,outer arc=1.1mm,
+    left=10pt,right=10pt,top=7pt,bottom=7pt,
+    coltitle=rdaccent,colbacktitle=rdaccent!12!white,
+    fonttitle=\small\rd@headfont\bfseries,
+    before skip=0.9em,after skip=0.9em,
+  },
+  rdconcept/.style={
+    enhanced,breakable,
+    colback=white,colframe=rdline,
+    boxrule=0.7pt,arc=1.1mm,outer arc=1.1mm,
+    left=8pt,right=8pt,top=6pt,bottom=6pt,
+    coltitle=rdgray,colbacktitle=white,
+    fonttitle=\small\rd@headfont,
+    before skip=0.9em,after skip=0.9em,
+  },
+  rdintro/.style={
+    enhanced,breakable,
+    colback=rdaccent!4!white,colframe=rdaccent!22!white,
+    boxrule=0pt,arc=0pt,outer arc=0pt,
+    left=10pt,right=10pt,top=7pt,bottom=7pt,
+    borderline west={3pt}{0pt}{rdaccent},
+    coltitle=rdaccent,colbacktitle=rdaccent!8!white,
+    fonttitle=\small\rd@headfont\bfseries,
+    before skip=1.0em,after skip=1.1em,
+  },
+}
+
+% 小结框：可选参数为标题，缺省「小结」
+\newtcolorbox{summarybox}[1][小结]{rdsummary,title={#1}}
+% 关键概念框：必选标题
+\newtcolorbox{keybox}[1]{rdkeybox,title={#1}}
+% 概念图占位框：可选标题，缺省「概念图」；内容自定
+\newtcolorbox{conceptmap}[1][概念图]{rdconcept,center title,title={#1}}
+
+%% 章首导读框 / 阅读路径提示
+\newtcolorbox{rd@introbox}[1][本章导读]{rdintro,title={#1}}
+\newcommand{\chapterintro}[1]{%
+  \begin{rd@introbox}
+    #1
+  \end{rd@introbox}}
+\newcommand{\readingpath}[1]{%
+  \par\addvspace{0.55em}%
+  \noindent
+  {\small\rd@headfont\bfseries\color{rdaccentii}阅读路径}%
+  {\small\color{rdline}\quad$\blacktriangleright$\quad}%
+  {\small\color{rdgray}#1}%
+  \par\addvspace{0.35em}}
+
+%% 图注来源：行内小号灰字，可放在 \caption 内或框内
+\newcommand{\figsource}[1]{{\footnotesize\color{rdgray}（来源：#1）}}
+
+%% 页边注：小号灰字、靠正文；宽度受 marginparwidth 保护，不会溢出页面
+\renewcommand*{\marginfont}{\footnotesize\raggedright\color{rdgray}}
+\newcommand{\aside}[1]{\marginnote{#1}}
+
+%% 选读内容：正常版显示灰色标记；skim 版整体隐藏
+\ifrd@skim
+  % skim 模式：整段吞掉（environ 捕获后丢弃），不占版面、不产生内容
+  \RequirePackage{environ}
+  \NewEnviron{optional}{}
+\else
+  \newenvironment{optional}{%
+    \par\addvspace{0.55em}%
+    \noindent{\footnotesize\color{rdgray}〔选读〕}\hspace{0.4em}\ignorespaces
+  }{%
+    \par\addvspace{0.4em}}
+\fi
+
+%% ---------------------------------------------------------------
+%% 8. 图表编号与图注
+%% ---------------------------------------------------------------
+% 图/表编号：沿用 ctexbook 默认「按章编号」（图 7.1、表 6.1）。
+% 注意：正文中存在 58 处硬编码「图7.1」、11 处「表6.1」，且 ctexbook 默认
+% 已是按章编号，故不改连字符形式，避免出现「引用 图7.1 / 图注 图 7-1」错位。
+\captionsetup{
+  font={small},
+  labelfont={color=rdgray},
+  labelsep=quad,
+  justification=centering,
+  singlelinecheck=true,
+  skip=6pt,
+}
+
+%% ---------------------------------------------------------------
+%% 9. 页眉页脚：章名 / 节名 + 外侧页码
+%% ---------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+% 页码放切口（外侧）：偶数页左侧、奇数页右侧；章/节名靠订口（内侧）
+\fancyhead[LE]{\small\color{rdgray}\thepage}
+\fancyhead[RE]{\small\color{rdgray}\leftmark}
+\fancyhead[LO]{\small\color{rdgray}\rightmark}
+\fancyhead[RO]{\small\color{rdgray}\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\headrule}{\color{rdline}\hrule width\headwidth height\headrulewidth}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\small\color{rdgray}\thepage}%
+  \renewcommand{\headrulewidth}{0pt}}
+
+%% ---------------------------------------------------------------
+%% 10. 超链接与书签（放在 AtBeginDocument，确保覆盖文档自己的 hypersetup）
+%% ---------------------------------------------------------------
+\AtBeginDocument{%
+  \hypersetup{%
+    colorlinks=true,
+    linkcolor=rdlink,citecolor=rdlink,
+    urlcolor=rdlink,filecolor=rdlink,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    pdfborder={0 0 0}}%
+  \bookmarksetup{numbered,open,openlevel=1,depth=2}%
+}
+
+\endinput
+%% =====================================================================
+%%  style-eng / task-3 版式原型 v1.0
+%% =====================================================================

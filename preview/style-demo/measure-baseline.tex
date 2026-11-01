@@ -1,0 +1,32 @@
+%% measure-baseline.tex —— 原版式版面参数实测（不加载 readability.sty）
+%% 运行：xelatex -output-directory=build measure-baseline.tex
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig, booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable, multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+\setmainfont{Times New Roman}
+\geometry{a4paper, scale=0.8}
+\setlength{\parindent}{2em}
+\setlength\columnsep{8mm}
+\begin{document}
+\makeatletter
+\typeout{== RD-BASELINE-MEASURE ==}
+\typeout{paperwidth=\the\paperwidth, paperheight=\the\paperheight}
+\typeout{textwidth=\the\textwidth, textheight=\the\textheight}
+\typeout{baselineskip=\the\baselineskip}
+\typeout{parskip=\the\parskip, parindent=\the\parindent}
+\typeout{oddsidemargin=\the\oddsidemargin, evensidemargin=\the\evensidemargin}
+\typeout{topmargin=\the\topmargin, headheight=\the\headheight, headsep=\the\headsep, footskip=\the\footskip}
+\typeout{marginparwidth=\the\marginparwidth, marginparsep=\the\marginparsep}
+\typeout{bodytop=\the\dimexpr 1in+\topmargin+\headheight+\headsep\relax}
+\typeout{charsperline=\strip@pt\dimexpr\textwidth/\dimexpr12pt\relax}
+\typeout{linesperpage=\strip@pt\dimexpr\textheight/\baselineskip\relax}
+\makeatother
+\noindent 基线测量见 build/measure-baseline.log。
+\end{document}

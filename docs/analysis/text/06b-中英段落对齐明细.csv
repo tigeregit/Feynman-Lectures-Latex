@@ -1,0 +1,34 @@
+﻿卷,章,章标题,中文段落起始行,中文段落首25字,中文字数,合并英文段序号(从1起),英文段首词,英词数和,期望中文字数,实际/期望,置信度,备注
+第一卷,I-01,原子的运动,47,现在，想象这个大水滴是由所有这些跳动的粒子一个挨一…,438,13+14,“Now imagine this great drop of…” + “In Fig. 1–2 we have a…”,301,428,1.02,高,长度偏差 2%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-01,原子的运动,154,如果一块由一个挨一个的原子组成的钢或盐可以具有这种…,300,39+40,“If a piece of steel or…” + “The original tape recording of this…”,306,435,0.69,中,长度偏差 31%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-03,物理学与其他科学的关系,102,有一位诗人曾经说过：“整个宇宙就存在于一杯葡萄酒中…,444,34+35,"“A poet once said, “The whole…” + “How I’m rushing through this! How…”",463,658,0.67,中,长度偏差 33%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-04,能量守恒,154,最后，我们提一下这个问题：今天我们可以从哪里获得能…,327,25+26,"“Finally, we remark on the question…” + “Our point here is not so…”",255,362,0.90,中,长度偏差 10%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-05,时间与距离,274,空间和时间的相对性意味着时间的测量也有一个实际由给…,131,45+46,“The relativity of space and time…” + “This equation is right only if…”,134,190,0.69,中,长度偏差 31%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-06,概率,339,如果想像有这样一团“云”，它的密度正比于我们能观察…,141,46+47,“We can form an image of…” + “In its efforts to learn as…”,123,175,0.81,中,长度偏差 19%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-07,万有引力理论,215,最后，让我们把引力理论与其他理论比较一下。近年来我…,234,32+33,"“Finally, let us compare gravitation with…” + “A radius vector is a line…”",193,274,0.85,中,长度偏差 15%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-09,牛顿的动力学定律,379,现在来看看如何计算海王星，木星，天王星或任何其他行…,539,17+18,"“Cross [math] at [math], [math] semimajor…” + “Now let us see how we…”",428,608,0.89,中,长度偏差 11%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-12,力的特性,15,牛顿还提供了一个有关力的法则：相互作用的物体之间的…,243,6+7,"“Newton also gave one rule about…” + “The student may object, “I do…”",140,199,1.22,高,长度偏差 22%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-13,功与势能（上）,264,现在我们来研究一个非常有趣而重要的问题。这个问题是…,552,23+24,“Now we come to a most…” + “We now demonstrate the correctness of…”,421,598,0.92,中,长度偏差 8%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-14,功与势能（下）,202,电的情形是场和势的又一个例子。在电的场合中，作用在…,527,39+40,"“One more example of fields and…” + “Let us take, as an example,…”",432,614,0.86,高,长度偏差 14%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-18,二维空间中的转动,137,为了证明这一点，我们假设有某些力作用在一个由许多质…,617,22+23,"“To prove this, we shall suppose…” + “Although our present discussion is nonrelativistic,…”",498,708,0.87,高,长度偏差 13%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-18,二维空间中的转动,181,一个非常重要的特例是刚体，即具有确定形状且只作转动…,508,27+28,“A special case of great importance…” + “This is the analog of the…”,395,561,0.91,高,长度偏差 9%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-19,质心、转动惯量,105,当然，我们可以继续计算各种其他有关物体的转动惯量。…,625,16+17,"“Of course, we could go on…” + “This theorem is called the parallel-axis…”",506,719,0.87,高,长度偏差 13%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-19,质心、转动惯量,199,现在我们来进一步讨论动力学问题。在第18章中我们讨…,212,23+24,“The moment of inertia is Iz=∑…” + “The moments of inertia of a…”,171,243,0.87,中,长度偏差 13%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-20,空间转动,132,现在我们要问，是否在物理学中的任何方程都可以写成叉…,259,11+12,“Now let us ask whether any…” + “Another theorem: If the total external…”,193,274,0.94,中,长度偏差 6%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-22,代数学,242,在本章开始时，我们只懂得整数的基本概念以及如何计算…,150,38+39,"“When we began this chapter, armed…” + “There is a definite arithmetic procedure,…”",122,173,0.87,中,长度偏差 13%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-25,线性系统及其综述,192,假设有一个相当复杂的力学系统，它并不仅仅是一个具有…,405,32+33,"“Suppose we have a mechanical system…” + “Suppose we have designed an automobile,…”",467,664,0.61,中,长度偏差 39%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-25,线性系统及其综述,194,假如我们设计了一辆汽车，并想知道，当它走过某种崎岖…,306,34+35,"“This is called an analog computer.…” + “Finally, there is an important item…”",215,305,1.00,中,长度偏差 0%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-25,线性系统及其综述,200,最后，还有一个并不完全属于复习性质的重要项目。这与…,803,37+38+39,“This is not the only way…” + “More complicated circuits can sometimes be…” + “Solutions which cannot be expressed as…”,368,523,1.54,低,长度偏差 54%；merge3；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-26,光学：最短时间原理,162,第三个有趣的现象是这样一个事实：当我们看见落日时，…,682,19+20,“A third interesting phenomenon is the…” + “As another important example of the…”,482,685,1.00,高,长度偏差 0%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-26,光学：最短时间原理,251,现在我们来说明对镜面来说这个结果如何隐含了最短时间…,403,33+34,“Now let us show how this…” + “Although it can be deduced if…”,319,453,0.89,中,长度偏差 11%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-27,几何光学,52,特别有趣的是的情况。由公式可见，当一个增加时，另一…,486,9+10,"“In particular, an interesting case is…” + “We see an interesting thing: if…”",353,502,0.97,高,长度偏差 3%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-27,几何光学,104,现在我们继续讨论另一种很实用的情况。我们所使用的大…,277,17+18,“Although the derivation of formula (27.3)…” + “Now we go on to consider…”,227,323,0.86,中,长度偏差 14%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-27,几何光学,155,我们暂且把焦距的实际公式忘掉，如果我们购到一个由某…,260,23+24,“Forgetting for a moment about the…” + “Now let us see how the…”,180,256,1.02,高,长度偏差 2%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-29,干涉,224,这样，两效应的总和为只有一个源存在时所得的强度 ，…,194,28+29,"“As we see, this agrees with…” + “Thus the sum of the two…”",143,203,0.95,中,长度偏差 5%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-30,衍射,61,现在我们来进一步考虑在不同情况下如何应用式（ ），…,440,8+9,"“Now let us consider further how…” + “First, we shall take the case…”",343,487,0.90,中,长度偏差 10%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-32,辐射阻尼、光的散射,219,有一种称为偏振片的东西，它具有这样的性质：当光通过…,74,38+39,“There is a substance called polaroid…” + “When a caret appears on a…”,72,102,0.72,中,长度偏差 28%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-40,统计力学原理,250,这是我们第一次通过和实验的比较确实推断出经典物理上…,120,44+45,“This is the first time that…” + “To get the value of the…”,119,169,0.71,中,长度偏差 29%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-42,分子动理论的应用,221,为了得到处在态的原子，可以应用各种技巧。如果我们用…,322,35+36,“Various tricks can be used to…” + “This is not the only way…”,263,374,0.86,中,长度偏差 14%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-43,扩散,73,描写分子碰撞的另一种方式是不谈碰撞之间的时间，而谈…,274,10+11,“Another way of describing the molecular…” + “In this chapter we shall be…”,192,273,1.00,高,长度偏差 0%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-44,热力学定律,302,再举一个不可逆的例子：如果我们把两个不同温度和的物…,162,46+47,"“Unfortunately, we are not going to…” + “The two laws of thermodynamics are…”",105,149,1.09,中,长度偏差 9%；merge2；英文段落数为重建值，可能多切/少切 1–3 段
+第一卷,I-44,热力学定律,310,遗憾的是，我们不打算深入到热力学领域中去。我们的目…,155,49+50,“Summary of the laws of thermodynamics…” + “Second law: A process whose only…”,87,124,1.25,中,长度偏差 25%；merge2；英文段落数为重建值，可能多切/少切 1–3 段

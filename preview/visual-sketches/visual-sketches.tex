@@ -1,0 +1,324 @@
+% !TEX program = xelatex
+% 费曼物理学讲义（中文版）图示机会审计 · TikZ 草图集
+% 用途：docs/analysis/visual/03-图表-文字替代建议.md 中 8 个示例的“可编译草图”
+% 编译：cd preview/visual-sketches && xelatex -interaction=nonstopmode visual-sketches.tex
+% 说明：草图只表达“要把哪几句话换成什么结构”，不是最终插图；正式作图应重画并统一风格。
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage[margin=1.6cm]{geometry}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,matrix}
+\setlength{\parindent}{0pt}
+\tikzset{
+  box/.style={draw,rounded corners=2pt,align=left,inner sep=4pt},
+  lbl/.style={font=\small,align=center},
+  arr/.style={-{Stealth[length=2.2mm]},thick},
+  thinarr/.style={-{Stealth[length=1.6mm]}},
+}
+\pagestyle{empty}
+\begin{document}
+
+% =========================================================================
+\section*{草图 1｜第2章 §2.1 引言：观棋者与检验规则的三种办法（行 3--26）}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 棋盘
+  \draw[step=0.55] (0,0) grid (3.3,3.3);
+  \fill (0.275,0.275) circle (2.5pt);
+  \fill (1.375,0.275) circle (2.5pt);
+  \fill (2.475,2.475) circle (2.5pt);
+  \draw[fill=gray!30] (1.925,1.925) rectangle ++(0.55,0.55);
+  \draw[fill=gray!30] (0.825,2.475) rectangle ++(0.55,0.55);
+  \node[align=center,below=2mm] at (1.65,0) {“世界＝一盘大棋”\\我们只看见走法，看不见规则};
+  % 观棋者
+  \begin{scope}[shift={(4.0,2.4)}]
+    \draw (0,0.35) circle (0.16);
+    \draw (-0.08,0.3) -- (-0.18,0.12) -- (0,0) -- (0.18,0.12) -- (0.08,0.3);
+    \node[align=left,anchor=west,lbl] at (0.3,0.1) {观察者：\\观察、推理、实验};
+  \end{scope}
+  % 三种检验
+  \node[box,text width=5.0cm,anchor=north west] (m1) at (8.2,4.4)
+    {\textbf{办法 1（直接检验）}\ 只让少数几个组成部分起作用，直接检验规则。\\
+     \emph{原文：“棋盘角落里可能只有少数几个棋子在移动”}};
+  \node[box,text width=5.0cm,below=3mm of m1.south west,anchor=north west] (m2)
+    {\textbf{办法 2（由一般推论检验）}\ 由规则推出较一般的法则，检验法则是否成立。\\
+     \emph{原文：象只走对角线 ⇒ 永远落在红方块}};
+  \node[box,text width=5.0cm,below=3mm of m2.south west,anchor=north west] (m3)
+    {\textbf{办法 3（粗略近似）}\ 说不出每一步的道理，但能判断大方向。\\
+     \emph{原文：“调集棋子保护王”那样的粗略判断}};
+  \draw[thinarr] (4.85,2.5) to[bend left=15] (m1.west);
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 15--19 段（约 900 字）中反复铺陈的“三种办法”；替代后只需保留“三种办法”的小标题句与每段的一句结论。}
+
+\newpage
+% =========================================================================
+\section*{草图 2｜第4章 §4.4 能量的其他形式：能量形式一览（行 138--155）}
+\vspace{2mm}
+\begin{center}
+\small
+\begin{tabular}{@{}p{2.2cm}p{5.4cm}p{4.2cm}p{3.1cm}@{}}
+\toprule
+能量形式 & 微观来源 & 公式 / 量度 & 典型例子 \\
+\midrule
+动能     & 宏观整体运动的速度        & $\frac12 mv^2$ & 下落的球、风 \\
+重力势能 & 物体与地球的相对位置      & $mgh$           & 高处的水 \\
+弹性能   & 原子间距偏离平衡位置      & $\frac12 kx^2$ & 拉长的弹簧 \\
+热能     & 原子无规则运动的动能      & $kT$ 量级       & 摩擦生热、温度升高 \\
+电能     & 电荷的相互吸引与排斥      & $qV$            & 电容器、闪电 \\
+辐射能   & 电磁场（是电能的一种）    & $h\nu$          & 光、无线电波 \\
+化学能   & 电子动能＋电子-质子电能   & 化学键能        & 燃烧、电池 \\
+核能     & 核内粒子排列（规律未知）  & 质量亏损        & 裂变、聚变、太阳 \\
+质能     & 物体“纯粹存在”          & $E=mc^2$        & 正负电子湮没 \\
+\bottomrule
+\end{tabular}
+
+\vspace{4mm}
+\begin{tikzpicture}[font=\small]
+  \node[box,text width=13.2cm,draw,dashed] {
+   \textbf{一句话读图：}除动能与重力势能外，其余形式都可以归到“\textbf{微观动能＋电相互作用}”这一条主线上；\\
+   \textbf{核能}与\textbf{质能}是两条尚未（或只能形式上）归并的支线。};
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 3 段（约 700 字）逐项枚举式的说明；替代后保留开头“能量还以其他方式存在”一句、结尾 $E=mc^2$ 的说明与正负电子湮没的例子。}
+
+\newpage
+% =========================================================================
+\section*{草图 3｜第52章 §52.2 空间与时间的对称性：对称操作对照表（行 28--53）}
+\vspace{2mm}
+\begin{center}
+\small
+\begin{tabular}{@{}p{2.7cm}p{3.7cm}p{4.3cm}p{3.6cm}@{}}
+\toprule
+操作 & 改变的变量 & 保持不变的定律 & 守恒量 \\
+\midrule
+空间平移   & 位置 $\mathbf r$        & 物理定律形式不变 & 线动量 \\
+时间平移   & 时间 $t$               & 物理定律形式不变 & 能量 \\
+空间转动   & 取向角 $\theta$         & 物理定律形式不变 & 角动量 \\
+匀速直线运动 & 速度（洛伦兹变换）     & 物理定律形式不变 & 能量-动量四矢量 \\
+全同粒子交换 & 原子 / 电子的身份      & 同种粒子不可区分 & （无新守恒量） \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{反例（对称性不成立）}}\\
+\midrule
+尺度缩放   & 整体放大 $k$ 倍         & \textcolor{red!70!black}{不成立} & —（伽利略：骨强度不按比例） \\
+匀速转动   & 角速度 $\omega$         & \textcolor{red!70!black}{不成立（绝对转动可测）} & —（离心力、傅科摆） \\
+时间反演   & $t\to -t$              & 微观可逆、宏观不可逆 & —（熵增） \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 普通狗骨
+  \draw[thick] (0,0) .. controls (0.6,0.55) and (1.2,0.55) .. (1.8,0)
+               .. controls (1.2,-0.5) and (0.6,-0.5) .. cycle;
+  \node[lbl,below=1mm] at (0.9,-0.35) {普通狗骨：与狗的重量成比例};
+  % 超级狗骨
+  \draw[thick] (4.2,0) .. controls (5.5,1.7) and (7.1,1.7) .. (8.4,0)
+               .. controls (7.1,-1.6) and (5.5,-1.6) .. cycle;
+  \node[lbl,below=1mm] at (6.3,-1.0) {放大 10 倍的“超级狗骨”：按同比例画会折断};
+  \draw[arr] (1.9,0.1) -- node[lbl,above]{尺度变换不对称} (4.0,0.35);
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 1--6 段（约 1100 字）逐个操作的口语化铺陈；替代后保留“尺度与匀速转动是反例”两段的故事（火柴棒教堂、伽利略骨图）作为趣味引子。}
+
+\newpage
+% =========================================================================
+\section*{草图 4｜第46章 §46.5 序与熵：黑白分子箱与宇宙熵增（行 115--133）}
+\vspace{8mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 左箱：分离
+  \draw (0,0) rectangle (2.2,2.2);
+  \foreach \x in {0.3,0.85,1.4,1.95} \foreach \y in {0.3,0.85} \fill (\x,\y) circle (3pt);
+  \foreach \x in {0.3,0.85,1.4,1.95} \foreach \y in {1.4,1.95} \draw[fill=white] (\x,\y) circle (3pt);
+  \node[lbl,above=1mm] at (1.1,2.25) {$W$ 小 $\Rightarrow S=k\ln W$ 小};
+  \node[lbl,below=1mm,text width=2.4cm] at (1.1,-0.1) {黑白分开\\排列方式少};
+  % 中箭头
+  \draw[arr] (2.5,1.1) -- node[lbl,above,align=center]{撤去分隔\\（混合）} (4.6,1.1);
+  % 右箱：混合
+  \draw (5.0,0) rectangle (7.2,2.2);
+  \foreach \p in {(5.25,0.35),(5.9,0.85),(6.4,0.3),(7.0,0.75),(5.45,1.55),(6.15,1.2),
+                  (6.65,1.85),(7.05,1.5),(5.35,1.0),(6.0,0.45),(6.65,0.6),(7.05,2.0)} \fill \p circle (3pt);
+  \draw[fill=white] (5.25,1.1) circle (3pt);
+  \draw[fill=white] (5.6,0.55) circle (3pt);
+  \draw[fill=white] (6.45,1.05) circle (3pt);
+  \draw[fill=white] (6.95,1.15) circle (3pt);
+  \node[lbl,above=1mm] at (6.1,2.25) {$W$ 大 $\Rightarrow S$ 大};
+  \node[lbl,below=1mm,text width=2.6cm] at (6.1,-0.1) {黑白混合\\排列方式多得多};
+  % 时间线
+  \draw[arr] (0.3,-2.5) -- (7.0,-2.5);
+  \node[lbl,below] at (1.3,-2.55) {宇宙初始：\\低熵、高度有序};
+  \node[lbl,below] at (3.6,-2.55) {不可逆过程：\\熵增};
+  \node[lbl,below] at (6.1,-2.55) {未来：\\高熵、平衡};
+  \node[lbl,above] at (3.6,-2.42) {“我们记得过去、不记得未来”};
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 1 段（约 350 字）对“排列方式数目＝无序量度”的口语定义，以及第 5--6 段“宇宙初始低熵”的论证；替代后保留“熵是无序的量度、宇宙总是从有序变到无序”两句结论和涨落假说的讨论。}
+
+\newpage
+% =========================================================================
+\section*{草图 5｜第35章 §35.3 色感觉的测量：四灯配色实验与色三角形（行 54--109）}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 四盏投影灯
+  \foreach \ii/\cc/\nn in {0/red!70/R,1.3/green!70/G,2.6/blue!70/B,3.9/black/W}{
+    \draw[fill=\cc] (\ii,0) rectangle ++(0.6,0.4);
+    \node[lbl,below] at (\ii+0.3,-0.05) {\nn};
+    \draw[-{Stealth[length=1.2mm]},shorten >=1pt] (\ii+0.3,0.45) -- (\ii+1.0,2.2);
+  }
+  % 屏
+  \draw[thick] (1.6,2.3) -- (5.6,2.3) -- (5.6,4.5) -- (1.6,4.5) -- cycle;
+  \draw[fill=red!40,opacity=0.8] (3.15,3.35) circle (0.75);
+  \draw[fill=green!40,opacity=0.75] (3.75,3.35) circle (0.75);
+  \draw[fill=blue!40,opacity=0.75] (3.45,3.9) circle (0.75);
+  \draw[very thick] (5.05,3.6) circle (0.5);
+  \node[lbl] at (5.05,3.6) {环};
+  \node[lbl,above] at (2.2,4.55) {屏：叠加区配出目标色，\\内外颜色相同即“匹配”};
+  % 色三角形
+  \begin{scope}[xshift=7.4cm,yshift=0.2cm]
+    \coordinate (R) at (90:1.8);
+    \coordinate (G) at (210:1.8);
+    \coordinate (B) at (330:1.8);
+    \draw[thick] (R) -- (G) -- (B) -- cycle;
+    \node[lbl,above] at (R) {红 R};
+    \node[lbl,anchor=east] at (G) {绿 G};
+    \node[lbl,below=2mm] at (B) {蓝 B};
+    \coordinate (X) at (2.15,1.45);
+    \fill (X) circle (2.5pt) node[lbl,right]{目标色 $X$};
+    \draw[dashed] (G) -- (X) -- (B);
+    \node[lbl,align=left,anchor=west] at (2.6,0.1)
+      {只用 G、B 到不了 $X$：\\需要在\emph{另一边}加红\\$\Rightarrow$ $X=rR+gG+bB$ 中 $r<0$};
+    \node[lbl,align=left,anchor=north west] at (-2.0,-1.75) {三角形三顶点＝三种原色；};
+    \node[lbl,align=left,anchor=north west] at (-2.0,-2.25) {任意颜色 $X$ 的坐标 $(r,g,b)$ 之和为 1。};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 4--9 段（约 1500 字）对“四盏灯怎么摆、光斑怎么叠加、棕色光是什么”的叙述；替代后保留“视觉效应构成三维流形”“颜色匹配遵循 X=Y、X+Z=Y+Z 两条定律”和“没有唯一的三原色”三个结论。}
+
+\newpage
+% =========================================================================
+\section*{草图 6｜第42章 §42.1 蒸发：分子逸出液面与能量小丘（行 3--61）}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 容器与液体
+  \draw (0,0) -- (0,2.4) -- (5.0,2.4) -- (5.0,0);
+  \fill[blue!12] (0.05,0.05) rectangle (4.95,1.1);
+  \draw[dashed] (0,1.1) -- (5.0,1.1);
+  \node[lbl] at (2.5,0.6) {液体：分子紧挨、受邻近分子吸引};
+  \node[lbl] at (2.5,1.9) {蒸气：分子稀薄，$n\ll 1/V_a$};
+  \foreach \x in {1.0,1.9,3.0,3.8}{
+    \fill (\x,1.15) circle (2.5pt);
+    \draw[arr] (\x,1.2) -- ++(0.05,0.5);
+  }
+  \draw[arr] (4.55,1.95) -- ++(-0.2,-0.55);
+  \node[lbl,anchor=west,align=left] at (5.2,1.9) {蒸发速率 $N_e\propto e^{-W/kT}$\\[1pt]
+                                              凝结速率 $N_c=nv$\\[1pt] 平衡时 $N_e=N_c$};
+  % 能量小丘：液体平台低、蒸气平台高
+  \begin{scope}[xshift=0.4cm,yshift=-3.4cm]
+    \draw[->] (0,0) -- (5.2,0) node[lbl,below right]{离开液面的位置 $x$};
+    \draw[->] (0,0) -- (0,2.2) node[lbl,above right]{能量};
+    \draw[thick] (0,0.4) -- (1.5,0.4)
+       .. controls (2.0,2.1) and (3.0,2.1) .. (3.5,1.35)
+       -- (5.0,1.35);
+    \draw[dashed] (2.5,1.95) -- (2.5,0) node[lbl,below]{$W$};
+    \node[lbl,above] at (2.5,2.15) {需要额外能量 $W$};
+    \node[lbl,below] at (0.8,0.2) {液体中};
+    \node[lbl,below] at (4.3,1.15) {蒸气中};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 7--10 段（约 900 字）逐一解释“为什么需要额外能量、为什么逸出后速度又变慢、蒸馏与泵抽走蒸气时结果如何”的绕行叙述；替代后保留 $nV_a=e^{-W/kT}$ 的推导主线与“指数因子主导温度依赖”的结论。}
+
+\newpage
+% =========================================================================
+\section*{草图 7｜第8章 §8.2 速率：阿基里斯追击的分段收敛与切线（行 101--141）}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 数轴与分段
+  \draw[->] (0,0) -- (10.4,0) node[lbl,below right]{位置};
+  \foreach \x in {0,2.2,4.2,5.6,6.6}{\draw (\x,0.08) -- (\x,-0.08);}
+  \node[lbl,below] at (2.2,-0.1) {100 m};
+  \node[lbl,below] at (4.2,-0.1) {110 m};
+  \node[lbl,below] at (5.6,-0.1) {111 m};
+  \node[lbl,below] at (6.9,-0.1) {111.1 m};
+  \fill[blue!70] (1.5,0) circle (3pt) node[lbl,above=1mm]{阿基里斯};
+  \fill[red!70] (2.2,0) circle (3pt) node[lbl,below=6mm]{乌龟};
+  \draw[decorate,decoration={brace,amplitude=4pt}] (0,0.55) -- (2.2,0.55) node[midway,above=2pt]{第 1 步 100 m};
+  \draw[decorate,decoration={brace,amplitude=4pt}] (2.2,0.3) -- (4.2,0.3) node[midway,above=2pt]{10 m};
+\end{tikzpicture}
+\end{center}
+{\centering\small
+每步路程按 $1/10$ 递减：$100+10+1+0.1+\cdots=111.\overline{1}$ m；
+步数无限、\textbf{时间之和有限} $\Rightarrow$ 阿基里斯在有限时间内追上。\par}
+\vspace{1mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % s-t 曲线
+  \draw[->] (0,0) -- (3.6,0) node[lbl,below right]{$t$};
+  \draw[->] (0,0) -- (0,2.8) node[lbl,left]{$s$};
+  \draw[thick] plot[domain=0:2.7,smooth] (\x,{0.3*\x*\x});
+  \coordinate (P) at (1.4,0.3*1.4*1.4);
+  \coordinate (Q) at (2.2,0.3*2.2*2.2);
+  \draw[dashed] (P) -- (2.2,0.3*1.4*1.4);
+  \draw (P) -- (Q) node[midway,lbl,above right]{割线};
+  \draw[thick,red!70] plot[domain=0.5:2.3] (\x,{0.6*1.4*(\x-1.4)+0.3*1.96});
+  \node[lbl,anchor=west] at (2.55,2.45) {切线＝瞬时速率};
+  \fill (P) circle (2pt);
+  \node[lbl,below=1mm] at (1.4,0.3*1.4*1.4) {$t_0$};
+  \node[lbl,align=left,anchor=west] at (4.2,1.5) {$\displaystyle v=\lim_{\epsilon\to0}\frac{x}{\epsilon}=\frac{ds}{dt}$\\[1pt]
+    （割线斜率 $\to$ 切线斜率）};
+\end{tikzpicture}
+\end{center}
+\vspace{1mm}
+{\centering\small
+\begin{tabular}{@{}cccc@{}}
+\toprule
+$\epsilon$（s） & $s=16(5+\epsilon)^2$ & $x=16(5+\epsilon)^2-400$ & $v=x/\epsilon\approx 32t_0+16\epsilon$ \\
+\midrule
+0.1    & 416.16     & 16.16    & 161.6 ft/s \\
+0.001  & 400.160016 & 0.160016 & 160.016 ft/s \\
+$\to0$ & —          & —        & \textbf{160 ft/s}（精确）\\
+\bottomrule
+\end{tabular}\par}
+\vspace{1mm}
+\emph{可替代：第 1 段芝诺佯谬（约 350 字）与第 9 段逐次取 $\epsilon=0.1,0.001$ 的数值演算（约 400 字）；替代后保留“速率＝极短时间内的距离 ÷ 时间”的定义句和“微积分由此而生”的总结。}
+
+\newpage
+% =========================================================================
+\section*{草图 8｜第14章 §14.1 功：$\mathbf F\cdot d\mathbf s$ 分解与“生理功/物理功”（行 3--22）}
+\vspace{2mm}
+\begin{center}
+\begin{tikzpicture}[font=\small]
+  % 力与位移分解
+  \draw[thick] (0,0) -- (6.6,0) node[lbl,below right]{位移方向};
+  \fill[gray!25] (0.9,0.35) rectangle ++(0.8,0.55);
+  \coordinate (O) at (1.35,0.95);
+  \draw[arr,thick,blue!70] (O) -- ++(2.1,1.3) node[lbl,above right]{$\mathbf F$};
+  \draw[dashed] (3.4,2.2) -- (3.4,0.68);
+  \draw[arr,thick,red!70] (O) -- ++(2.05,0) node[lbl,below right]{$F_\parallel$};
+  \draw[arr,thick,green!50!black] (3.4,0.95) -- ++(0,1.2) node[lbl,right]{$F_\perp$};
+  \draw[arr,thick] (4.6,0.68) -- node[lbl,below]{$d\mathbf s$} (5.5,0.68);
+  \node[lbl,align=left,anchor=west] at (6.9,1.3)
+    {$dW=\mathbf F\cdot d\mathbf s=F_\parallel\,ds$\\[2pt]
+     $F_\perp$ 不做功！};
+  % 四个场景
+  \begin{scope}[yshift=-3.2cm]
+    \node[box,minimum width=3.1cm,minimum height=1.6cm,align=center] (s1) at (1.5,0)
+      {提重物不动\\$W=0$（物理）\\但出汗：生理功 $\neq0$};
+    \node[box,minimum width=3.1cm,minimum height=1.6cm,align=center] (s2) at (4.9,0)
+      {提重物上楼\\$W>0$（人做功）};
+    \node[box,minimum width=3.1cm,minimum height=1.6cm,align=center] (s3) at (8.3,0)
+      {提重物下楼\\$W<0$（地球对人做功）};
+    \node[box,minimum width=3.1cm,minimum height=1.6cm,align=center] (s4) at (11.7,0)
+      {放在桌上\\桌子不做功、\\不需要能量};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\emph{可替代：第 4--6 段（约 1000 字）关于“提着重物为什么累、平滑肌与横纹肌有什么不同”的生理学插叙；替代后保留“物理学上的功只看 $\mathbf F\cdot d\mathbf s$”的定义与“桌子支撑重物不做功”的对照结论。}
+
+\end{document}

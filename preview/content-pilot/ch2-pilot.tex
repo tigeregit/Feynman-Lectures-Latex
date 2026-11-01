@@ -1,0 +1,68 @@
+% !TEX program = xelatex
+% ============================================================
+% 第 2 章《基本物理》§2-1、§2-3 阅读效率改造样张（独立编译入口）
+%
+% 编译：cd preview/content-pilot && xelatex -interaction=nonstopmode ch2-pilot.tex
+%      （建议连编 2 遍以解析目录/引用；产物可加 -output-directory=build）
+%
+% 正文在 ch2-pilot-body.tex；版式宏由 styles/readability.sty 提供。
+% 说明：styles/readability.sty 由版式组（task-3）提供；就绪前用 local-stub.sty
+%      预编译验证，最终交付必须使用正式样式包。
+% ============================================================
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+            booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable,
+            multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+
+% —— 与主文件一致的排版微调 ——
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+\providecommand{\numb}[1]{{~\num{#1}~}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    bookmarksnumbered=true,
+    pdftitle={费曼物理学讲义 第2章 内容改造样张},
+    pdfauthor={理查德·费曼},
+    pdfcreator={岩湖上的野草},
+    pdfproducer={XeLaTex}
+}
+
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+
+% \geometry 由 readability.sty 统一设置（task-3）
+\setlength{\parindent}{2em}
+\setlength{\columnsep}{8mm}
+\graphicspath{{../../Figures/VolumeI}}
+
+\usetikzlibrary{arrows.meta, positioning}
+
+% —— 版式层（style-eng / task-3 交付）：必须放在导言区最后 ——
+\usepackage{../../styles/readability}
+
+\begin{document}
+
+% 样张是第 2 章，单独编译时把章号置为 2
+\setcounter{chapter}{1}
+\setcounter{page}{15}
+
+\input{ch2-pilot-body.tex}
+
+\end{document}

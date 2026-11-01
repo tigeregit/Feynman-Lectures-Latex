@@ -6,3 +6,7 @@
 *.out
 *.toc
 *.xdv
+# 预览样张编译产物（PDF 另存到 preview/ 目录供评审）
+preview/**/build/
+__pycache__/
+.DS_Store

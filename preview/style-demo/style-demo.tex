@@ -1,0 +1,134 @@
+%% =====================================================================
+%%  style-demo.tex —— 「原版式 vs 新版式」前后对比样张（task-3 交付物）
+%%  ---------------------------------------------------------------------
+%%  内容：从 Chapters/VolumeI/Chapter2、7、13 原样抽取的 3 个代表性片段
+%%        （密集纯文字 / 图表密集 / 公式密集），正文一字未删。
+%%  两个版本：
+%%    原版式：主文件导言区原样（ctexbook 12pt A4 twoside，scale=0.8，
+%%            无 readability.sty）—— 新版元素宏在导言区降级为无样式
+%%    新版式：主文件导言区 + styles/readability.sty
+%%
+%%  编译（两个版本各两遍）：
+%%    cd preview/style-demo
+%%    mkdir -p build
+%%    xelatex -output-directory=build style-demo.tex            # 新版式
+%%    xelatex -output-directory=build style-demo.tex
+%%    xelatex -output-directory=build -jobname=style-demo-before \
+%%            "\def\demomode{before}\input{style-demo.tex}"      # 原版式
+%%    xelatex -output-directory=build -jobname=style-demo-before \
+%%            "\def\demomode{before}\input{style-demo.tex}"
+%%  或直接运行：bash build-demo.sh
+%% =====================================================================
+\providecommand{\demomode}{after}
+\def\demobeforestring{before}
+\newif\ifdemoafter
+\ifx\demomode\demobeforestring \demoafterfalse \else \demoaftertrue \fi
+
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+%% ---------- 与主文件 Feynman Lectures on Physics.tex 一致的导言区 ----------
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+  booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable, multicol,
+  pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,
+  urlcolor=black,bookmarksnumbered=true,pdftitle={费曼物理学讲义版式样张}}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+\setmainfont{Times New Roman}
+\geometry{a4paper,scale=0.8}
+\setlength{\parindent}{2em}
+\graphicspath{{../../Figures/VolumeI/}}
+
+%% ---------- 版本切换：新版式加载正式样式包；原版式把新元素降级 ----------
+\ifdemoafter
+  \usepackage{../../styles/readability}
+\else
+  \RequirePackage{environ}
+  % 命令类元素：原版式下丢弃（这些文字本来就是“新版式新增的路标/框标题”）
+  \newcommand{\chapterintro}[1]{}
+  \newcommand{\readingpath}[1]{}
+  \newcommand{\runin}[1]{}
+  \newcommand{\pullquote}[1]{}
+  \newcommand{\aside}[1]{}
+  \newcommand{\figsource}[1]{}
+  % 行内标记类：原版式下还原为普通文字（原文一字不少）
+  \newcommand{\term}[1]{#1}
+  \newcommand{\enterm}[1]{#1}
+  \newcommand{\keyidea}[1]{#1}
+  % 环境类：原版式下 summarybox/keybox/conceptmap 的内容是新增小结，
+  % 用 environ 捕获后丢弃；optional 正常显示正文。
+  \NewEnviron{summarybox}[1][]{}
+  \NewEnviron{keybox}[1]{}
+  \NewEnviron{conceptmap}[1][]{}
+  \newenvironment{optional}{}{}
+\fi
+
+\begin{document}
+
+%% ---------- 三个代表性章节片段（原始正文）----------
+\input{style-demo-body.tex}
+
+%% ---------- 新版元素一览（仅新版式 PDF 有）----------
+\ifdemoafter
+\clearpage
+\chapter*{新版元素一览：readability.sty 接口演示}
+\pdfbookmark[0]{新版元素一览}{ReadabilityElements}
+\chapterintro{这一页集中演示 \texttt{readability.sty} 提供的全部正文元素。正文作者只需要调用这些宏，样式细节（颜色、字号、左右留白、黑白模式）全部由样式包集中管理，换配色或改字号不用动正文。}
+\readingpath{先看强调体系，再看框类环境，最后看页边注与选读。}
+
+\section*{强调体系}
+\term{术语}首次出现时加粗；英文对照用小号字，例如 \enterm{Feynman Lectures on Physics}。
+\keyidea{关键句用左侧色条 + 加粗标出，它可以在段落中间直接使用，不会打断段落。}这就是行内关键句的效果，后面继续正常行文。
+原来书中大量使用的 \uwave{波浪下划线强调} 已重定义为清晰可见的细下划线，正文无需改动任何命令。
+
+\runin{段内小标题}段内小标题用于给长段落设置路标：它会另起一段、以强调色加粗显示，后接「．」再进入正文。长节可以放 3--6 个这样的路标，读者扫一眼就知道这一段讲什么。
+
+\pullquote{“What I cannot create, I do not understand.” —— 我不能创造的东西，我就不能理解。}
+
+\begin{optional}
+这段是「离题但有趣」的选读内容。正常阅读时它带一个灰色〔选读〕标记；编译时加 \texttt{skim} 选项，整段会消失且不占版面，适合做速读版。
+\end{optional}
+
+\aside{页边注示例：译者注、单词解释、旁白提示都可以放在这里，小号灰字，紧贴正文右侧。}
+
+\section*{框类环境}
+\begin{summarybox}[本节要点]
+  \begin{itemize}
+    \item summarybox 自带浅灰底色与左侧色条，默认标题是「小结」。
+    \item 可选参数可自定义标题，例如本框的标题是「本节要点」。
+    \item 内容支持列表、段落、公式。
+  \end{itemize}
+\end{summarybox}
+
+\begin{keybox}{关键概念：可逆过程}
+  keybox 用强调色的浅底与描边突出一个必须掌握的概念，标题必填。
+\end{keybox}
+
+\begin{conceptmap}
+  \centering
+  \begin{tikzpicture}[
+      every node/.style={draw=black!45, rounded corners=1.5pt, font=\small, inner sep=4pt},
+      every path/.style={-{Stealth[length=2mm]}, draw=black!55}]
+    \node (a) at (0,0)    {现象};
+    \node (b) at (2.6,0)  {规则};
+    \node (c) at (5.2,0)  {预测};
+    \node (d) at (2.6,-1.3) {实验检验};
+    \draw (a) -- (b);
+    \draw (b) -- (c);
+    \draw (b) -- (d);
+    \draw (d) -- (a);
+  \end{tikzpicture}
+  \figsource{样张占位图：基本物理“现象—规则—预测”关系}
+\end{conceptmap}
+
+\section*{图注与来源}
+图注统一为小号字、标签灰色，来源用 \verb|\figsource{...}| 标注（见本章前面的图）。图表编号沿用 \texttt{ctexbook} 的按章编号（图 7.1、表 6.1），以兼容正文中已有的硬编码引用。
+\fi
+
+\end{document}

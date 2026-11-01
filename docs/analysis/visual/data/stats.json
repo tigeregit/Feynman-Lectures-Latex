@@ -1,0 +1,6489 @@
+{
+  "generated_by": "tools/audit_figures.py",
+  "textwidth_pt": 459.7983,
+  "textheight_pt": 676.04005,
+  "volumes": {
+    "VolumeI": {
+      "chapters": 52,
+      "sections": 290,
+      "sections_all": 293,
+      "starred": 3,
+      "han": 482846,
+      "figures": 343,
+      "blocks": 294,
+      "tables": 24,
+      "pages": 621,
+      "section_han_avg": 1661.9,
+      "section_han_max": 5083
+    },
+    "VolumeII": {
+      "chapters": 1,
+      "sections": 1,
+      "sections_all": 1,
+      "starred": 0,
+      "han": 2912,
+      "figures": 0,
+      "blocks": 0,
+      "tables": 0,
+      "pages": 4,
+      "section_han_avg": 2912.0,
+      "section_han_max": 2912
+    },
+    "VolumeIII": {
+      "chapters": 1,
+      "sections": 1,
+      "sections_all": 1,
+      "starred": 0,
+      "han": 797,
+      "figures": 0,
+      "blocks": 0,
+      "tables": 0,
+      "pages": 1,
+      "section_han_avg": 797.0,
+      "section_han_max": 797
+    }
+  },
+  "files": {
+    "total": 360,
+    "by_ext": {
+      "jpeg": 1,
+      "pdf": 340,
+      "png": 7,
+      "jpg": 12
+    },
+    "dim_known": 360,
+    "aspect_cats": {
+      "近方形(0.77-1.3)": 109,
+      "横长(0.45-0.77)": 168,
+      "竖长(1.3-2.2)": 13,
+      "超横长(<0.45)": 68,
+      "超竖长(>2.2)": 2
+    },
+    "orphans": 9,
+    "orphan_list": [
+      {
+        "path": "Figures/VolumeI/Chapter23/由电阻、电容和电感组成的振荡电路.pdf",
+        "ext": "pdf",
+        "kb": 7.1
+      },
+      {
+        "path": "Figures/VolumeI/Chapter40/一个具有无摩擦活塞的容器中的气体原子.pdf",
+        "ext": "pdf",
+        "kb": 5.7
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/一条形磁铁在导线处给出了磁场.pdf",
+        "ext": "pdf",
+        "kb": 11.1
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/导线的磁场施力于磁铁.pdf",
+        "ext": "pdf",
+        "kb": 19.7
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/矢量场可用一些线来表示，这些线在每一点与场矢量的方向相切，而线的密度则与场矢量的大小成正比.pdf",
+        "ext": "pdf",
+        "kb": 1.9
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/矢量场可用一组箭头来表示。每支箭头的大小和方向为所画箭头的那一点的矢量场之值.pdf",
+        "ext": "pdf",
+        "kb": 2.6
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/矢量场的环流等于矢量（沿一致向指）的切向分量平均值乘以该回路的周长.pdf",
+        "ext": "pdf",
+        "kb": 8.2
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/矢量场通过一个曲面的通量，定义为矢量的法向分量的平均值乘以该曲面的面积.pdf",
+        "ext": "pdf",
+        "kb": 7.0
+      },
+      {
+        "path": "Figures/VolumeII/Chapter1/（a）液体中的速度场；设想有一截面均匀、按照图（b）所示的任一闭合曲线安放的管子；假如液体除管内的外，处处都被冻结，那么管里的液体便将按图（c）所示的那样循环流动.pdf",
+        "ext": "pdf",
+        "kb": 84.2
+      }
+    ],
+    "duplicates": []
+  },
+  "figures": {
+    "never_mentioned": [
+      {
+        "volume": "VolumeI",
+        "chapter_no": 1,
+        "number": "1.7",
+        "label": "figure:食盐的晶体结构",
+        "line": 103
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.11",
+        "label": "figure:使氢原子形象化的一种方法",
+        "line": 337
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 29,
+        "number": "29.7",
+        "label": "figure:两个相聚10",
+        "line": 137
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 30,
+        "number": "30.6",
+        "label": "figure:瑞利判据的说明。一个花样的极大值落在另一个花样的第一极小值上",
+        "line": 141
+      }
+    ],
+    "hard_only_referenced": [
+      {
+        "volume": "VolumeI",
+        "chapter_no": 2,
+        "number": "2.1",
+        "label": "figure:基本粒子",
+        "line": 99
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 3,
+        "number": "3.1",
+        "label": "figure:克莱布斯循环",
+        "line": 34
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 3,
+        "number": "3.2",
+        "label": "figure:部分DNA分子结构图",
+        "line": 50
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "number": "4.1",
+        "label": "figure:简单的起重机械",
+        "line": 46
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "number": "4.2",
+        "label": "figure:一种可逆机",
+        "line": 57
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "number": "4.5",
+        "label": "figure:螺旋起重器",
+        "line": 98
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "number": "4.6",
+        "label": "figure:一端支撑着的荷重杆",
+        "line": 107
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "number": "4.7",
+        "label": "figure:单摆",
+        "line": 127
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 5,
+        "number": "5.1",
+        "label": "figure:一个小球沿着斜面滚下",
+        "line": 15
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 5,
+        "number": "5.2",
+        "label": "figure:示波器屏上的两个图象",
+        "line": 53
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 5,
+        "number": "5.3",
+        "label": "figure:放射性随时间而减少",
+        "line": 117
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 5,
+        "number": "5.4",
+        "label": "figure:用三角法测定人造卫星的高度",
+        "line": 143
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 5,
+        "number": "5.9",
+        "label": "figure:某些病毒分子的电子显微镜图",
+        "line": 196
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.1",
+        "label": "figure:三十次抛掷正面和反面的前后次序",
+        "line": 62
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.5",
+        "label": "figure:无规行走取得的进度",
+        "line": 149
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.6",
+        "label": "figure:获得正面的那些抛掷在某一特定次序中的比值",
+        "line": 217
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.7",
+        "label": "figure:在步数为N的无规行走中停止在从起点算起的距离",
+        "line": 258
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.8",
+        "label": "figure:无规行走中所通过的距离D，它位于x1与x2",
+        "line": 271
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.9",
+        "label": "figure:气体中分子的速度分布",
+        "line": 295
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "number": "6.10",
+        "label": "figure:观察一个粒子的位置与速度时的概率密度",
+        "line": 316
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.1",
+        "label": "figure:椭圆",
+        "line": 23
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.2",
+        "label": "figure:开普勒的面积定律",
+        "line": 31
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.4",
+        "label": "figure:指向圆形轨道中心的加速运动",
+        "line": 72
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.5",
+        "label": "figure:解释潮汐现象的地球－月球系统",
+        "line": 84
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.6",
+        "label": "figure:双星系统",
+        "line": 100
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.7",
+        "label": "figure:天狼星B绕天狼星A转动的轨道",
+        "line": 116
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.8",
+        "label": "figure:球状星团",
+        "line": 122
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.9",
+        "label": "figure:某星系",
+        "line": 132
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.10",
+        "label": "figure:星系团",
+        "line": 138
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.11",
+        "label": "figure:星际尘埃云",
+        "line": 152
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.12",
+        "label": "figure:新星的形成",
+        "line": 158
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.13",
+        "label": "figure:卡文迪什测量引力常数的装置",
+        "line": 173
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 7,
+        "number": "7.14",
+        "label": "figure:两个电子之间的电力相互作用和引力相互作用的相对强度",
+        "line": 203
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "number": "8.1",
+        "label": "figure:汽车的距离-时间曲线",
+        "line": 43
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "number": "8.2",
+        "label": "figure:落体的距离-时间曲线",
+        "line": 78
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "number": "8.4",
+        "label": "figure:具有水平初速的落体所描述的抛物线",
+        "line": 325
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 36,
+        "number": "36.10",
+        "label": "figure:章鱼的眼睛",
+        "line": 178
+      }
+    ],
+    "naver_mentioned_count": 4,
+    "hard_only_count": 37
+  },
+  "caption_filename": {
+    "exact": 249,
+    "contains": 55,
+    "none": 30,
+    "total": 334,
+    "examples": [
+      {
+        "chapter": 5,
+        "caption": "利用地球轨道的直径作为基线，可以用三角法测量靠近地球的恒星的距离",
+        "stems": [
+          "三角法测量恒星距离",
+          "靠近我们银河系中心的一个星团"
+        ]
+      },
+      {
+        "chapter": 5,
+        "caption": "最现代化的200英寸望远镜拍摄的最远天体——牧夫座中的3C295（用箭头标出）",
+        "stems": [
+          "和我们银河系一样的一个螺旋银河系",
+          "牧夫座中的3c295"
+        ]
+      },
+      {
+        "chapter": 5,
+        "caption": "在只观察核的时候，通过一块厚1厘米的碳所见到的那个设想的图像",
+        "stems": [
+          "一块厚1厘米的碳设想的图像"
+        ]
+      },
+      {
+        "chapter": 6,
+        "caption": "在每轮为30次抛掷的三轮游戏中所观察到的正面和反面的前后次序",
+        "stems": [
+          "三十次抛掷正面和反面的前后次序"
+        ]
+      },
+      {
+        "chapter": 6,
+        "caption": "在抛掷三次的游戏中，能得到0，1，2，3次正面的方式数目的图解",
+        "stems": [
+          "抛掷三次游戏的图解",
+          "抛掷六次游戏的图解"
+        ]
+      },
+      {
+        "chapter": 6,
+        "caption": "无规行走中所通过的距离D，它位于x_1与x_2之间的概率就是曲线p(x)下面从x_1到x_2的面积",
+        "stems": [
+          "无规行走中所通过的距离D，它位于x1与x2"
+        ]
+      },
+      {
+        "chapter": 7,
+        "caption": "卡文迪什用来验证小的物体之间存在万有引力和测量引力常数G的装置略图",
+        "stems": [
+          "卡文迪什测量引力常数的装置"
+        ]
+      },
+      {
+        "chapter": 20,
+        "caption": "当图\\ref{figure:回转仪}的自旋轮子的轴在转动时，轮子上的质点是沿曲线运动的",
+        "stems": [
+          "当图20"
+        ]
+      },
+      {
+        "chapter": 23,
+        "caption": "\\rho^2对\\omega关系图",
+        "stems": [
+          "rho^2对omega关系图",
+          "theta对omega关系图"
+        ]
+      },
+      {
+        "chapter": 23,
+        "caption": "\\theta对\\omega关系图",
+        "stems": [
+          "rho^2对omega关系图",
+          "theta对omega关系图"
+        ]
+      },
+      {
+        "chapter": 29,
+        "caption": "由推迟加速度为a'的正电荷产生的电场\\boldsymbol{E}",
+        "stems": [
+          "由推迟加速度为a'的正电荷产生的电场E"
+        ]
+      },
+      {
+        "chapter": 30,
+        "caption": "影子边缘附近的光强、几何阴影边缘在x_0",
+        "stems": [
+          "相位延迟与离上图D点的距离平方成正比的许多同相振子振幅的叠加",
+          "影子边缘附近的光强、几何阴影边缘在x0"
+        ]
+      }
+    ]
+  },
+  "sizes": {
+    "n": 340,
+    "width_pt": {
+      "min": 39.6,
+      "p25": 132.2,
+      "median": 160.3,
+      "p75": 178.2,
+      "max": 413.4
+    },
+    "height_pt": {
+      "min": 14.7,
+      "median": 100.2,
+      "max": 397.7
+    },
+    "bytes": {
+      "min": 1.9,
+      "median": 9.1,
+      "max": 482.1
+    },
+    "extreme_tall": [
+      {
+        "path": "Figures/VolumeI/Chapter36/小眼的构造（复眼中的一个单细胞）.pdf",
+        "aspect": 6.0
+      },
+      {
+        "path": "Figures/VolumeI/Chapter44/卡诺循环中的各个步骤.pdf",
+        "aspect": 2.317
+      },
+      {
+        "path": "Figures/VolumeI/Chapter3/部分DNA分子结构图.pdf",
+        "aspect": 2.178
+      },
+      {
+        "path": "Figures/VolumeI/Chapter2/基本粒子.pdf",
+        "aspect": 2.152
+      },
+      {
+        "path": "Figures/VolumeI/Chapter15/光束经过的斜向路程示意图.pdf",
+        "aspect": 2.142
+      }
+    ],
+    "extreme_wide": [
+      {
+        "path": "Figures/VolumeI/Chapter31/屏的衍射.pdf",
+        "aspect": 0.139
+      },
+      {
+        "path": "Figures/VolumeI/Chapter13/在重力作用下小质量m的物体向大质量M的物体落下.pdf",
+        "aspect": 0.147
+      },
+      {
+        "path": "Figures/VolumeI/Chapter26/海市蜃楼现象.pdf",
+        "aspect": 0.171
+      },
+      {
+        "path": "Figures/VolumeI/Chapter50/压力与时间的关系.pdf",
+        "aspect": 0.189
+      },
+      {
+        "path": "Figures/VolumeI/Chapter16/质量相同的物体之间的非弹性碰撞的两种看法.pdf",
+        "aspect": 0.213
+      }
+    ],
+    "smallest": [
+      {
+        "path": "Figures/VolumeI/Chapter13/在重力作用下小质量m的物体向大质量M的物体落下.pdf",
+        "w": 100.38,
+        "h": 14.71
+      },
+      {
+        "path": "Figures/VolumeI/Chapter39/两种气体在一个具有半透膜的容器中.pdf",
+        "w": 90.92,
+        "h": 31.01
+      },
+      {
+        "path": "Figures/VolumeI/Chapter21/挂在弹簧上的物体.pdf",
+        "w": 41.32,
+        "h": 68.83
+      },
+      {
+        "path": "Figures/VolumeI/Chapter25/静电学中的叠加原理.pdf",
+        "w": 83.83,
+        "h": 36.92
+      },
+      {
+        "path": "Figures/VolumeI/Chapter11/计算加速度的矢量图.pdf",
+        "w": 93.42,
+        "h": 36.13
+      }
+    ],
+    "largest": [
+      {
+        "path": "Figures/VolumeI/Chapter7/天狼星B绕天狼星A转动的轨道.pdf",
+        "w": 365.84,
+        "h": 356.08
+      },
+      {
+        "path": "Figures/VolumeI/Chapter3/克莱布斯循环.pdf",
+        "w": 344.54,
+        "h": 295.46
+      },
+      {
+        "path": "Figures/VolumeI/Chapter4/一种可逆机.pdf",
+        "w": 275.36,
+        "h": 365.58
+      },
+      {
+        "path": "Figures/VolumeI/Chapter6/无规行走取得的进度.pdf",
+        "w": 372.1,
+        "h": 266.98
+      },
+      {
+        "path": "Figures/VolumeI/Chapter6/30次抛掷的100轮游戏所得结果概况.pdf",
+        "w": 373.14,
+        "h": 260.93
+      }
+    ]
+  },
+  "filenames": {
+    "total": 360,
+    "over_20": 75,
+    "over_30": 26,
+    "with_punct": 52,
+    "with_parens": 23,
+    "longest": [
+      {
+        "path": "Figures/VolumeII/Chapter1/（a）液体中的速度场；设想有一截面均匀、按照图（b）所示的任一闭合曲线安放的管子；假如液体除管内的外，处处都被冻结，那么管里的液体便将按图（c）所示的那样循环流动.pdf",
+        "n": 81
+      },
+      {
+        "path": "Figures/VolumeI/Chapter33/玻璃纸双折射性的实验演示。光的电矢量用虚线表示。偏振片的通过轴与玻璃纸的光轴用箭头表示。入射光束是非偏振光.pdf",
+        "n": 53
+      },
+      {
+        "path": "Figures/VolumeI/Chapter41/（a）光束式灵敏电流计，来自光源L的光束经小镜反射后射至刻度尺上；（b）刻度的读数作为时间的函数的记录图.pdf",
+        "n": 52
+      },
+      {
+        "path": "Figures/VolumeI/Chapter45/在汽缸中进行压缩的可凝结蒸气的等温线。在左边，物质处于液相。在右边，物质汽化。在中央部分，液体和蒸气并存.pdf",
+        "n": 52
+      },
+      {
+        "path": "Figures/VolumeI/Chapter36/像上面这样的盘子转动时，两个较黑的“环”中只有一个呈现颜色。如果转动方向反过来，则在另一个环上呈现颜色.pdf",
+        "n": 51
+      },
+      {
+        "path": "Figures/VolumeI/Chapter40/速度分布函数。图中的阴影面积代表f（u）du，即速度在u附近du范围内的粒子数在总粒子数中所占的分数.pdf",
+        "n": 50
+      },
+      {
+        "path": "Figures/VolumeI/Chapter42/如用蓝光将原子激发到较高的状态h，它可以发射一个光子使原子处于m态，m态的原子足够多时就开始产生激光.pdf",
+        "n": 50
+      },
+      {
+        "path": "Figures/VolumeI/Chapter48/频率比为8-10的两列余弦波的叠加。图中各个“拍”内的图样精确重复这一点在一般情况下并不具有代表性.pdf",
+        "n": 49
+      }
+    ]
+  },
+  "reuse": [],
+  "bad_table_labels": [
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "label_line": 51,
+      "caption_line": 52
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "label_line": 120,
+      "caption_line": 121
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "label_line": 181,
+      "caption_line": 182
+    }
+  ],
+  "blocks": {
+    "total": 294,
+    "wrapfigure": 211,
+    "figure": 83,
+    "captions": 344,
+    "starred": 1,
+    "multi_caption_blocks": 50,
+    "blocks_without_label": 4,
+    "captions_without_label": 8,
+    "ref_before": 91,
+    "ref_after": 162,
+    "ref_none": 41
+  },
+  "labels": {
+    "total": 1120,
+    "figure": 335,
+    "table": 24,
+    "table_tab_prefix": 6,
+    "table_Table_prefix": 18,
+    "figure_referenced": 294,
+    "figure_unreferenced": 41,
+    "unreferenced_list": [
+      "figure:食盐的晶体结构",
+      "figure:基本粒子",
+      "figure:克莱布斯循环",
+      "figure:部分DNA分子结构图",
+      "figure:简单的起重机械",
+      "figure:一种可逆机",
+      "figure:螺旋起重器",
+      "figure:一端支撑着的荷重杆",
+      "figure:单摆",
+      "figure:一个小球沿着斜面滚下",
+      "figure:示波器屏上的两个图象",
+      "figure:放射性随时间而减少",
+      "figure:用三角法测定人造卫星的高度",
+      "figure:某些病毒分子的电子显微镜图",
+      "figure:三十次抛掷正面和反面的前后次序",
+      "figure:无规行走取得的进度",
+      "figure:获得正面的那些抛掷在某一特定次序中的比值",
+      "figure:在步数为N的无规行走中停止在从起点算起的距离",
+      "figure:无规行走中所通过的距离D，它位于x1与x2",
+      "figure:气体中分子的速度分布",
+      "figure:观察一个粒子的位置与速度时的概率密度",
+      "figure:使氢原子形象化的一种方法",
+      "figure:椭圆",
+      "figure:开普勒的面积定律",
+      "figure:指向圆形轨道中心的加速运动",
+      "figure:解释潮汐现象的地球－月球系统",
+      "figure:双星系统",
+      "figure:天狼星B绕天狼星A转动的轨道",
+      "figure:球状星团",
+      "figure:某星系",
+      "figure:星系团",
+      "figure:星际尘埃云",
+      "figure:新星的形成",
+      "figure:卡文迪什测量引力常数的装置",
+      "figure:两个电子之间的电力相互作用和引力相互作用的相对强度",
+      "figure:汽车的距离-时间曲线",
+      "figure:落体的距离-时间曲线",
+      "figure:具有水平初速的落体所描述的抛物线",
+      "figure:两个相聚10",
+      "figure:瑞利判据的说明。一个花样的极大值落在另一个花样的第一极小值上",
+      "figure:章鱼的眼睛"
+    ],
+    "table_unreferenced": [
+      "tab:电磁波谱",
+      "tab:基本相互作用",
+      "tab:表8.1",
+      "tab:求导简表"
+    ],
+    "duplicates": {},
+    "ref_calls_to_figures": 476
+  },
+  "captions": {
+    "total": 343,
+    "empty": 9,
+    "empty_list": [
+      [
+        "VolumeI",
+        22,
+        "22.1"
+      ],
+      [
+        "VolumeI",
+        24,
+        "24.3"
+      ],
+      [
+        "VolumeI",
+        24,
+        "24.4"
+      ],
+      [
+        "VolumeI",
+        24,
+        "24.5"
+      ],
+      [
+        "VolumeI",
+        24,
+        "24.6"
+      ],
+      [
+        "VolumeI",
+        27,
+        "27.1"
+      ],
+      [
+        "VolumeI",
+        38,
+        "38.5"
+      ],
+      [
+        "VolumeI",
+        38,
+        "38.6"
+      ],
+      [
+        "VolumeI",
+        51,
+        "51.4"
+      ]
+    ],
+    "formula_only": 23,
+    "with_punctuation": 79,
+    "with_footnotesize": 71,
+    "with_source_credit": 5,
+    "source_credit_list": [
+      [
+        "VolumeI",
+        23,
+        "23.5",
+        "\\footnotesize  大气层对外来激发的响应，如果大气层$S_2-$潮汐是由万有引力引起的，$a$就是这种条件下所需的响应；峰值的放大率是$100~:~1$。$b$是从$M"
+      ],
+      [
+        "VolumeI",
+        23,
+        "23.6",
+        "\\footnotesize  通过一个薄氯化钠膜（$0.17~\\mu m$）的红外辐射透射  （转载自Barnes R B. Z Physik，1932，75:723; Kitte"
+      ],
+      [
+        "VolumeI",
+        23,
+        "23.7",
+        "\\footnotesize  在顺磁有机化合物中，磁能损失与外加磁场强度的关系  （转载自Holden A N，et al. Phys Rev，1949，75:1614）"
+      ],
+      [
+        "VolumeI",
+        23,
+        "23.8",
+        "\\footnotesize  从Li原子中射出的$\\gamma $射线强度与轰击质子能量的关系。虚线是对角动量$l=0$的质子进行计算时得出的理论曲线  （转载自Bonner T "
+      ],
+      [
+        "VolumeI",
+        23,
+        "23.10",
+        "\\footnotesize  动量与反应截面的依赖关系（a）$K^-+p \\to \\Lambda + \\pi ^+ + \\pi ^-$和（b）$K^-+p \\to \\overlin"
+      ]
+    ],
+    "bare_title": 119,
+    "median_han": 13
+  },
+  "placement": {
+    "unresolved": 0,
+    "unresolved_list": [],
+    "overflow_risk": 0,
+    "overflow_list": [],
+    "tiny": 54,
+    "tiny_list": [
+      [
+        "VolumeI",
+        4,
+        44,
+        "Chapter4/简单的起重机械",
+        1.54
+      ],
+      [
+        "VolumeI",
+        4,
+        96,
+        "Chapter4/螺旋起重器",
+        2.47
+      ],
+      [
+        "VolumeI",
+        4,
+        105,
+        "Chapter4/一端支撑着的荷重杆",
+        2.02
+      ],
+      [
+        "VolumeI",
+        5,
+        13,
+        "Chapter5/一个小球沿着斜面滚下",
+        2.13
+      ],
+      [
+        "VolumeI",
+        10,
+        73,
+        "Chapter10/直线气垫端视图",
+        2.18
+      ],
+      [
+        "VolumeI",
+        10,
+        79,
+        "Chapter10/带有爆破作用气缸附件的滑块截面图",
+        1.75
+      ],
+      [
+        "VolumeI",
+        10,
+        95,
+        "Chapter10/质量相等的物体进行的非弹性碰撞的两种看法",
+        2.19
+      ],
+      [
+        "VolumeI",
+        10,
+        104,
+        "Chapter10/质量相等的物体进行的另一种非弹性碰撞的两种看法",
+        2.14
+      ],
+      [
+        "VolumeI",
+        10,
+        141,
+        "Chapter10/m和2m之间的非弹性碰撞的两种看法",
+        2.21
+      ],
+      [
+        "VolumeI",
+        11,
+        273,
+        "Chapter11/计算加速度的矢量图",
+        1.93
+      ],
+      [
+        "VolumeI",
+        12,
+        202,
+        "Chapter12/赝力的实例",
+        1.65
+      ],
+      [
+        "VolumeI",
+        13,
+        111,
+        "Chapter13/在重力作用下小质量m的物体向大质量M的物体落下",
+        0.83
+      ],
+      [
+        "VolumeI",
+        13,
+        133,
+        "Chapter13/引力场中的闭合路径",
+        2.24
+      ],
+      [
+        "VolumeI",
+        14,
+        205,
+        "Chapter14/两块平行金属板之间的场",
+        2.25
+      ],
+      [
+        "VolumeI",
+        15,
+        26,
+        "Chapter15/沿着x轴以均匀速度作相对运动的两个坐标系",
+        2.27
+      ],
+      [
+        "VolumeI",
+        16,
+        128,
+        "Chapter16/两个以相等速率、相向运动的相同粒子所发生的弹性碰撞的两种视图",
+        2.19
+      ],
+      [
+        "VolumeI",
+        16,
+        166,
+        "Chapter16/质量相同的物体之间的非弹性碰撞的两种看法",
+        1.65
+      ],
+      [
+        "VolumeI",
+        18,
+        114,
+        "Chapter18/一个力产生的转矩",
+        2.34
+      ],
+      [
+        "VolumeI",
+        19,
+        83,
+        "Chapter19/长度为L",
+        1.97
+      ],
+      [
+        "VolumeI",
+        19,
+        228,
+        "Chapter19/在旋转台上作径向移动的一个点的三个连续位置",
+        2.39
+      ],
+      [
+        "VolumeI",
+        20,
+        25,
+        "Chapter20/字母互换",
+        1.63
+      ],
+      [
+        "VolumeI",
+        23,
+        144,
+        "Chapter23/theta对omega关系图",
+        2.27
+      ],
+      [
+        "VolumeI",
+        24,
+        144,
+        "Chapter24/演示瞬变态的电路",
+        2.27
+      ],
+      [
+        "VolumeI",
+        24,
+        178,
+        "Chapter24/24-6",
+        1.85
+      ],
+      [
+        "VolumeI",
+        25,
+        83,
+        "Chapter25/静电学中的叠加原理",
+        2.06
+      ],
+      [
+        "VolumeI",
+        25,
+        109,
+        "Chapter25/一个复杂的力可以当作一连串强烈的冲击力来处理",
+        2.34
+      ],
+      [
+        "VolumeI",
+        25,
+        203,
+        "Chapter25/两个阻抗的串联和并联",
+        2.37
+      ],
+      [
+        "VolumeI",
+        26,
+        168,
+        "Chapter26/海市蜃楼现象",
+        0.94
+      ],
+      [
+        "VolumeI",
+        26,
+        175,
+        "Chapter26/光学“暗箱”",
+        2.38
+      ],
+      [
+        "VolumeI",
+        26,
+        254,
+        "Chapter26/许多邻近路径的概率振幅总和",
+        1.99
+      ],
+      [
+        "VolumeI",
+        27,
+        28,
+        "Chapter27/单折射面聚焦",
+        1.91
+      ],
+      [
+        "VolumeI",
+        27,
+        74,
+        "Chapter27/虚像",
+        2.3
+      ],
+      [
+        "VolumeI",
+        27,
+        167,
+        "Chapter27/薄透镜成像的几何图",
+        2.38
+      ],
+      [
+        "VolumeI",
+        27,
+        230,
+        "Chapter27/光学系统的分辨本领",
+        2.42
+      ],
+      [
+        "VolumeI",
+        28,
+        84,
+        "Chapter28/高频信号发生器激励两根导线上的电荷上下运动",
+        2.38
+      ],
+      [
+        "VolumeI",
+        29,
+        25,
+        "Chapter29/某电荷的加速度与时间的关系",
+        2.28
+      ],
+      [
+        "VolumeI",
+        29,
+        32,
+        "Chapter29/下一时刻的电场与位置的关系",
+        2.1
+      ],
+      [
+        "VolumeI",
+        30,
+        139,
+        "Chapter30/瑞利判据的说明。一个花样的极大值落在另一个花样的第一极小值上",
+        2.46
+      ],
+      [
+        "VolumeI",
+        34,
+        141,
+        "Chapter34/由一系列（a）尖脉冲和（b）平坦脉冲所造成的总电场",
+        1.28
+      ],
+      [
+        "VolumeI",
+        34,
+        180,
+        "Chapter34/高速电子在核附近通过时，沿其运动方向辐射能量",
+        2.23
+      ],
+      [
+        "VolumeI",
+        36,
+        146,
+        "Chapter36/小眼的最佳大小为δm",
+        2.47
+      ],
+      [
+        "VolumeI",
+        38,
+        26,
+        "Chapter38/长度为Δx的波包",
+        2.03
+      ],
+      [
+        "VolumeI",
+        39,
+        34,
+        "Chapter39/一个具有无摩擦活塞的容器中的气体原子",
+        1.85
+      ],
+      [
+        "VolumeI",
+        39,
+        171,
+        "Chapter39/两种不同的单原子气体的原子被一可移动的活塞隔开",
+        1.66
+      ],
+      [
+        "VolumeI",
+        39,
+        223,
+        "Chapter39/两种气体在一个具有半透膜的容器中",
+        1.32
+      ],
+      [
+        "VolumeI",
+        41,
+        37,
+        "Chapter41/（a）实际的电路，温度为T；（b）人为的电路，具有一理想（无噪声）的电阻及一“噪声发生器”G",
+        2.27
+      ],
+      [
+        "VolumeI",
+        41,
+        217,
+        "Chapter41/36步每步长为l的无规行走。S36离B有多远？",
+        1.9
+      ],
+      [
+        "VolumeI",
+        42,
+        165,
+        "Chapter42/原子内两个能级间的跃迁",
+        2.09
+      ],
+      [
+        "VolumeI",
+        44,
+        64,
+        "Chapter44/热机",
+        1.88
+      ],
+      [
+        "VolumeI",
+        47,
+        135,
+        "Chapter47/作用在垂直于x的单位面积上的压强在正x方向上所产生的净力是",
+        2.23
+      ],
+      [
+        "VolumeI",
+        48,
+        221,
+        "Chapter48/定域波列",
+        2.43
+      ],
+      [
+        "VolumeI",
+        52,
+        112,
+        "Chapter52/空间的位移矢量与其镜像",
+        1.59
+      ],
+      [
+        "VolumeI",
+        52,
+        119,
+        "Chapter52/转轮与其镜像。注意角速度“矢量”方向并没有反转",
+        2.02
+      ],
+      [
+        "VolumeI",
+        52,
+        157,
+        "Chapter52/粒子衰变的简图",
+        1.81
+      ]
+    ],
+    "tall": 1,
+    "tall_list": [
+      [
+        "VolumeI",
+        2,
+        97,
+        "Chapter2/基本粒子",
+        22.6,
+        2.152
+      ]
+    ]
+  },
+  "heavy_sections": {
+    "all": 37,
+    "v1": 36,
+    "v1_sum_han": 79450,
+    "v1_list": [
+      {
+        "volume": "VolumeI",
+        "chapter_no": 1,
+        "chapter_title": "原子的运动",
+        "title": "引言",
+        "section_no": 1,
+        "han": 1799,
+        "start": 3,
+        "end": 24,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 2,
+        "chapter_title": "基本物理",
+        "title": "引言",
+        "section_no": 1,
+        "han": 2440,
+        "start": 3,
+        "end": 26,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 2,
+        "chapter_title": "基本物理",
+        "title": "量子物理学",
+        "section_no": 3,
+        "han": 3049,
+        "start": 70,
+        "end": 84,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 3,
+        "chapter_title": "物理学与其他科学的关系",
+        "title": "天文学",
+        "section_no": 4,
+        "han": 1618,
+        "start": 65,
+        "end": 74,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "chapter_title": "能量守恒",
+        "title": "什么是能量",
+        "section_no": 1,
+        "han": 1552,
+        "start": 3,
+        "end": 33,
+        "eq": 2,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "chapter_title": "能量守恒",
+        "title": "能量的其他形式",
+        "section_no": 4,
+        "han": 2886,
+        "start": 138,
+        "end": 155,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 6,
+        "chapter_title": "概率",
+        "title": "机会和可能性",
+        "section_no": 1,
+        "han": 2093,
+        "start": 7,
+        "end": 55,
+        "eq": 3,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "chapter_title": "运动",
+        "title": "速率",
+        "section_no": 2,
+        "han": 3279,
+        "start": 101,
+        "end": 141,
+        "eq": 5,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 9,
+        "chapter_title": "牛顿的动力学定律",
+        "title": "动量和力",
+        "section_no": 1,
+        "han": 1723,
+        "start": 3,
+        "end": 31,
+        "eq": 3,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 10,
+        "chapter_title": "动量守恒",
+        "title": "牛顿第三定律",
+        "section_no": 1,
+        "han": 1659,
+        "start": 3,
+        "end": 16,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 10,
+        "chapter_title": "动量守恒",
+        "title": "动量守恒",
+        "section_no": 2,
+        "han": 2685,
+        "start": 17,
+        "end": 66,
+        "eq": 5,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 12,
+        "chapter_title": "力的特性",
+        "title": "什么是力",
+        "section_no": 1,
+        "han": 2816,
+        "start": 3,
+        "end": 24,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 14,
+        "chapter_title": "功与势能（下）",
+        "title": "功",
+        "section_no": 1,
+        "han": 2023,
+        "start": 3,
+        "end": 22,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 16,
+        "chapter_title": "相对论中的能量与动量",
+        "title": "相对论与哲学家",
+        "section_no": 1,
+        "han": 2861,
+        "start": 3,
+        "end": 28,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 16,
+        "chapter_title": "相对论中的能量与动量",
+        "title": "相对论性能量",
+        "section_no": 5,
+        "han": 1850,
+        "start": 177,
+        "end": 205,
+        "eq": 3,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 17,
+        "chapter_title": "时空",
+        "title": "四维矢量代数",
+        "section_no": 5,
+        "han": 1670,
+        "start": 186,
+        "end": 223,
+        "eq": 4,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 18,
+        "chapter_title": "二维空间中的转动",
+        "title": "质心",
+        "section_no": 1,
+        "han": 1849,
+        "start": 3,
+        "end": 49,
+        "eq": 5,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 25,
+        "chapter_title": "线性系统及其综述",
+        "title": "物理学中的类比",
+        "section_no": 4,
+        "han": 2027,
+        "start": 154,
+        "end": 197,
+        "eq": 5,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 28,
+        "chapter_title": "电磁辐射",
+        "title": "电磁学",
+        "section_no": 1,
+        "han": 2841,
+        "start": 3,
+        "end": 56,
+        "eq": 4,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 32,
+        "chapter_title": "辐射阻尼、光的散射",
+        "title": "独立的辐射源",
+        "section_no": 4,
+        "han": 1565,
+        "start": 114,
+        "end": 138,
+        "eq": 1,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 35,
+        "chapter_title": "色视觉",
+        "title": "色感觉的测量",
+        "section_no": 3,
+        "han": 4013,
+        "start": 54,
+        "end": 109,
+        "eq": 6,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 38,
+        "chapter_title": "波动观点与粒子观点的关系",
+        "title": "哲学含义",
+        "section_no": 6,
+        "han": 2592,
+        "start": 232,
+        "end": 246,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 39,
+        "chapter_title": "气体分子动理论",
+        "title": "物质的性质",
+        "section_no": 1,
+        "han": 1742,
+        "start": 3,
+        "end": 26,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 40,
+        "chapter_title": "统计力学原理",
+        "title": "经典物理的失败",
+        "section_no": 6,
+        "han": 2034,
+        "start": 223,
+        "end": 250,
+        "eq": 2,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 42,
+        "chapter_title": "分子动理论的应用",
+        "title": "蒸发",
+        "section_no": 1,
+        "han": 3542,
+        "start": 3,
+        "end": 61,
+        "eq": 6,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 42,
+        "chapter_title": "分子动理论的应用",
+        "title": "热电离",
+        "section_no": 3,
+        "han": 1897,
+        "start": 77,
+        "end": 112,
+        "eq": 5,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 43,
+        "chapter_title": "扩散",
+        "title": "分子间的碰撞",
+        "section_no": 1,
+        "han": 2049,
+        "start": 3,
+        "end": 70,
+        "eq": 10,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 43,
+        "chapter_title": "扩散",
+        "title": "漂移速率",
+        "section_no": 3,
+        "han": 1978,
+        "start": 113,
+        "end": 147,
+        "eq": 3,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 43,
+        "chapter_title": "扩散",
+        "title": "分子扩散",
+        "section_no": 5,
+        "han": 1768,
+        "start": 186,
+        "end": 312,
+        "eq": 21,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 45,
+        "chapter_title": "热力学示例",
+        "title": "应用",
+        "section_no": 2,
+        "han": 2043,
+        "start": 116,
+        "end": 191,
+        "eq": 13,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 46,
+        "chapter_title": "棘轮和掣爪",
+        "title": "不可逆性",
+        "section_no": 4,
+        "han": 1633,
+        "start": 83,
+        "end": 114,
+        "eq": 3,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 46,
+        "chapter_title": "棘轮和掣爪",
+        "title": "序与熵",
+        "section_no": 5,
+        "han": 2194,
+        "start": 115,
+        "end": 133,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 48,
+        "chapter_title": "拍",
+        "title": "定域波列",
+        "section_no": 4,
+        "han": 1656,
+        "start": 139,
+        "end": 210,
+        "eq": 9,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 50,
+        "chapter_title": "谐波",
+        "title": "音色与谐和",
+        "section_no": 3,
+        "han": 1712,
+        "start": 64,
+        "end": 96,
+        "eq": 1,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 52,
+        "chapter_title": "物理定律的对称性",
+        "title": "空间与时间的对称性",
+        "section_no": 2,
+        "han": 2789,
+        "start": 28,
+        "end": 53,
+        "eq": 0,
+        "list": 0
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 52,
+        "chapter_title": "物理定律的对称性",
+        "title": "反物质",
+        "section_no": 8,
+        "han": 1523,
+        "start": 181,
+        "end": 194,
+        "eq": 0,
+        "list": 0
+      }
+    ],
+    "strict_v1": 9,
+    "strict_list": [
+      {
+        "volume": "VolumeI",
+        "chapter_no": 2,
+        "chapter_title": "基本物理",
+        "title": "引言",
+        "section_no": 1,
+        "han": 2440,
+        "start": 3,
+        "end": 26
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 2,
+        "chapter_title": "基本物理",
+        "title": "量子物理学",
+        "section_no": 3,
+        "han": 3049,
+        "start": 70,
+        "end": 84
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 4,
+        "chapter_title": "能量守恒",
+        "title": "能量的其他形式",
+        "section_no": 4,
+        "han": 2886,
+        "start": 138,
+        "end": 155
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 12,
+        "chapter_title": "力的特性",
+        "title": "什么是力",
+        "section_no": 1,
+        "han": 2816,
+        "start": 3,
+        "end": 24
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 14,
+        "chapter_title": "功与势能（下）",
+        "title": "功",
+        "section_no": 1,
+        "han": 2023,
+        "start": 3,
+        "end": 22
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 16,
+        "chapter_title": "相对论中的能量与动量",
+        "title": "相对论与哲学家",
+        "section_no": 1,
+        "han": 2861,
+        "start": 3,
+        "end": 28
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 38,
+        "chapter_title": "波动观点与粒子观点的关系",
+        "title": "哲学含义",
+        "section_no": 6,
+        "han": 2592,
+        "start": 232,
+        "end": 246
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 46,
+        "chapter_title": "棘轮和掣爪",
+        "title": "序与熵",
+        "section_no": 5,
+        "han": 2194,
+        "start": 115,
+        "end": 133
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 52,
+        "chapter_title": "物理定律的对称性",
+        "title": "空间与时间的对称性",
+        "section_no": 2,
+        "han": 2789,
+        "start": 28,
+        "end": 53
+      }
+    ]
+  },
+  "per_chapter": [
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 10,
+      "fig_area_ratio": 0.156,
+      "volume": "V1",
+      "chapter_no": 1,
+      "title": "原子的运动",
+      "sections": 4,
+      "han": 10327,
+      "blocks": 10,
+      "figures": 10,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.91,
+      "han_per_page": 939.0,
+      "unreferenced_labels": 1,
+      "heavy_sections": [
+        {
+          "title": "引言",
+          "han": 1799,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "物质是原子构成的",
+          "han": 3381,
+          "start": 25,
+          "fig": 4,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "原子过程",
+          "han": 2122,
+          "start": 73,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "化学反应",
+          "han": 3025,
+          "start": 110,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 2,
+      "caption_rich": 0,
+      "caption_total": 1,
+      "fig_area_ratio": 0.073,
+      "volume": "V1",
+      "chapter_no": 2,
+      "title": "基本物理",
+      "sections": 4,
+      "han": 12120,
+      "blocks": 1,
+      "figures": 1,
+      "tables": 2,
+      "pages": 13,
+      "fig_per_page": 0.08,
+      "han_per_page": 932.0,
+      "unreferenced_labels": 1,
+      "heavy_sections": [
+        {
+          "title": "引言",
+          "han": 2440,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "1920年以前的物理学",
+          "han": 3513,
+          "start": 27,
+          "fig": 0,
+          "tab": 1,
+          "eq": 0
+        },
+        {
+          "title": "量子物理学",
+          "han": 3049,
+          "start": 70,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "原子核与粒子",
+          "han": 3118,
+          "start": 85,
+          "fig": 1,
+          "tab": 1,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 4,
+      "caption_rich": 0,
+      "caption_total": 2,
+      "fig_area_ratio": 0.074,
+      "volume": "V1",
+      "chapter_no": 3,
+      "title": "物理学与其他科学的关系",
+      "sections": 7,
+      "han": 11388,
+      "blocks": 2,
+      "figures": 2,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.18,
+      "han_per_page": 1035.0,
+      "unreferenced_labels": 2,
+      "heavy_sections": [
+        {
+          "title": "生物学",
+          "han": 5083,
+          "start": 16,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "天文学",
+          "han": 1618,
+          "start": 65,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 7,
+      "caption_rich": 0,
+      "caption_total": 7,
+      "fig_area_ratio": 0.121,
+      "volume": "V1",
+      "chapter_no": 4,
+      "title": "能量守恒",
+      "sections": 4,
+      "han": 8830,
+      "blocks": 6,
+      "figures": 7,
+      "tables": 0,
+      "pages": 10,
+      "fig_per_page": 0.7,
+      "han_per_page": 883.0,
+      "unreferenced_labels": 5,
+      "heavy_sections": [
+        {
+          "title": "什么是能量",
+          "han": 1552,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "重力势能",
+          "han": 3774,
+          "start": 34,
+          "fig": 5,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "能量的其他形式",
+          "han": 2886,
+          "start": 138,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 9,
+      "caption_rich": 8,
+      "caption_total": 10,
+      "fig_area_ratio": 0.138,
+      "volume": "V1",
+      "chapter_no": 5,
+      "title": "时间与距离",
+      "sections": 7,
+      "han": 9168,
+      "blocks": 8,
+      "figures": 10,
+      "tables": 1,
+      "pages": 12,
+      "fig_per_page": 0.83,
+      "han_per_page": 764.0,
+      "unreferenced_labels": 5,
+      "heavy_sections": [
+        {
+          "title": "长的距离",
+          "han": 1992,
+          "start": 136,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "短的距离",
+          "han": 1822,
+          "start": 189,
+          "fig": 2,
+          "tab": 1,
+          "eq": 3
+        }
+      ]
+    },
+    {
+      "hard_refs": 22,
+      "caption_rich": 9,
+      "caption_total": 11,
+      "fig_area_ratio": 0.145,
+      "volume": "V1",
+      "chapter_no": 6,
+      "title": "概率",
+      "sections": 5,
+      "han": 9272,
+      "blocks": 10,
+      "figures": 11,
+      "tables": 1,
+      "pages": 13,
+      "fig_per_page": 0.85,
+      "han_per_page": 713.0,
+      "unreferenced_labels": 8,
+      "heavy_sections": [
+        {
+          "title": "机会和可能性",
+          "han": 2093,
+          "start": 7,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "起伏",
+          "han": 1747,
+          "start": 56,
+          "fig": 3,
+          "tab": 1,
+          "eq": 3
+        },
+        {
+          "title": "无规行走",
+          "han": 2060,
+          "start": 139,
+          "fig": 2,
+          "tab": 0,
+          "eq": 11
+        },
+        {
+          "title": "概率分布",
+          "han": 1938,
+          "start": 229,
+          "fig": 3,
+          "tab": 0,
+          "eq": 7
+        }
+      ]
+    },
+    {
+      "hard_refs": 13,
+      "caption_rich": 4,
+      "caption_total": 14,
+      "fig_area_ratio": 0.185,
+      "volume": "V1",
+      "chapter_no": 7,
+      "title": "万有引力理论",
+      "sections": 8,
+      "han": 11974,
+      "blocks": 11,
+      "figures": 14,
+      "tables": 0,
+      "pages": 13,
+      "fig_per_page": 1.08,
+      "han_per_page": 921.0,
+      "unreferenced_labels": 13,
+      "heavy_sections": [
+        {
+          "title": "牛顿引力定律",
+          "han": 2692,
+          "start": 49,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "万有引力",
+          "han": 2877,
+          "start": 90,
+          "fig": 4,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "什么是引力",
+          "han": 2565,
+          "start": 187,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 7,
+      "caption_rich": 2,
+      "caption_total": 4,
+      "fig_area_ratio": 0.086,
+      "volume": "V1",
+      "chapter_no": 8,
+      "title": "运动",
+      "sections": 5,
+      "han": 9042,
+      "blocks": 3,
+      "figures": 4,
+      "tables": 2,
+      "pages": 13,
+      "fig_per_page": 0.31,
+      "han_per_page": 696.0,
+      "unreferenced_labels": 3,
+      "heavy_sections": [
+        {
+          "title": "运动的描述",
+          "han": 2091,
+          "start": 3,
+          "fig": 2,
+          "tab": 2,
+          "eq": 2
+        },
+        {
+          "title": "速率",
+          "han": 3279,
+          "start": 101,
+          "fig": 0,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "加速度",
+          "han": 1788,
+          "start": 241,
+          "fig": 1,
+          "tab": 0,
+          "eq": 15
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 6,
+      "fig_area_ratio": 0.082,
+      "volume": "V1",
+      "chapter_no": 9,
+      "title": "牛顿的动力学定律",
+      "sections": 7,
+      "han": 6747,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 2,
+      "pages": 13,
+      "fig_per_page": 0.46,
+      "han_per_page": 519.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "动量和力",
+          "han": 1723,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "行星运动",
+          "han": 1695,
+          "start": 219,
+          "fig": 2,
+          "tab": 1,
+          "eq": 21
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 5,
+      "caption_total": 8,
+      "fig_area_ratio": 0.074,
+      "volume": "V1",
+      "chapter_no": 10,
+      "title": "动量守恒",
+      "sections": 5,
+      "han": 10124,
+      "blocks": 5,
+      "figures": 8,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.73,
+      "han_per_page": 920.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "牛顿第三定律",
+          "han": 1659,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "动量守恒",
+          "han": 2685,
+          "start": 17,
+          "fig": 0,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "动量是守恒的",
+          "han": 2938,
+          "start": 67,
+          "fig": 5,
+          "tab": 0,
+          "eq": 2
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 8,
+      "fig_area_ratio": 0.078,
+      "volume": "V1",
+      "chapter_no": 11,
+      "title": "矢量",
+      "sections": 7,
+      "han": 8630,
+      "blocks": 5,
+      "figures": 8,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.57,
+      "han_per_page": 616.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "转动",
+          "han": 1667,
+          "start": 78,
+          "fig": 1,
+          "tab": 0,
+          "eq": 5
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 4,
+      "fig_area_ratio": 0.039,
+      "volume": "V1",
+      "chapter_no": 12,
+      "title": "力的特性",
+      "sections": 6,
+      "han": 13141,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.29,
+      "han_per_page": 939.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "什么是力",
+          "han": 2816,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "摩擦力",
+          "han": 3291,
+          "start": 25,
+          "fig": 1,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "分子力",
+          "han": 1549,
+          "start": 60,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "基本力、场",
+          "han": 3371,
+          "start": 81,
+          "fig": 1,
+          "tab": 0,
+          "eq": 12
+        },
+        {
+          "title": "赝力",
+          "han": 1675,
+          "start": 177,
+          "fig": 1,
+          "tab": 0,
+          "eq": 4
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 6,
+      "fig_area_ratio": 0.06,
+      "volume": "V1",
+      "chapter_no": 13,
+      "title": "功与势能（上）",
+      "sections": 4,
+      "han": 7397,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.5,
+      "han_per_page": 616.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "落体的能量",
+          "han": 2159,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 15
+        },
+        {
+          "title": "万有引力所做的功",
+          "han": 2608,
+          "start": 104,
+          "fig": 3,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "巨大物体的引力场",
+          "han": 1770,
+          "start": 237,
+          "fig": 2,
+          "tab": 0,
+          "eq": 12
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 5,
+      "fig_area_ratio": 0.056,
+      "volume": "V1",
+      "chapter_no": 14,
+      "title": "功与势能（下）",
+      "sections": 5,
+      "han": 9111,
+      "blocks": 5,
+      "figures": 5,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.45,
+      "han_per_page": 828.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "功",
+          "han": 2023,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "保守力",
+          "han": 2786,
+          "start": 40,
+          "fig": 2,
+          "tab": 0,
+          "eq": 8
+        },
+        {
+          "title": "势与场",
+          "han": 2447,
+          "start": 138,
+          "fig": 2,
+          "tab": 0,
+          "eq": 13
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 3,
+      "fig_area_ratio": 0.077,
+      "volume": "V1",
+      "chapter_no": 15,
+      "title": "狭义相对论",
+      "sections": 9,
+      "han": 10048,
+      "blocks": 3,
+      "figures": 3,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.21,
+      "han_per_page": 718.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "相对性原理",
+          "han": 1950,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 4
+        },
+        {
+          "title": "迈克耳逊-莫雷实验",
+          "han": 1610,
+          "start": 74,
+          "fig": 1,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "时间的变换",
+          "han": 2139,
+          "start": 143,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 4,
+      "fig_area_ratio": 0.04,
+      "volume": "V1",
+      "chapter_no": 16,
+      "title": "相对论中的能量与动量",
+      "sections": 5,
+      "han": 9894,
+      "blocks": 3,
+      "figures": 4,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.33,
+      "han_per_page": 824.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "相对论与哲学家",
+          "han": 2861,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "速度的变换",
+          "han": 1831,
+          "start": 35,
+          "fig": 1,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "相对论性质量",
+          "han": 2484,
+          "start": 113,
+          "fig": 2,
+          "tab": 0,
+          "eq": 6
+        },
+        {
+          "title": "相对论性能量",
+          "han": 1850,
+          "start": 177,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 4,
+      "fig_area_ratio": 0.056,
+      "volume": "V1",
+      "chapter_no": 17,
+      "title": "时空",
+      "sections": 5,
+      "han": 7573,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 0,
+      "pages": 10,
+      "fig_per_page": 0.4,
+      "han_per_page": 757.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "时空几何学",
+          "han": 1942,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "四维矢量代数",
+          "han": 1670,
+          "start": 186,
+          "fig": 0,
+          "tab": 0,
+          "eq": 4
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 4,
+      "fig_area_ratio": 0.059,
+      "volume": "V1",
+      "chapter_no": 18,
+      "title": "二维空间中的转动",
+      "sections": 4,
+      "han": 7030,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 0,
+      "pages": 9,
+      "fig_per_page": 0.44,
+      "han_per_page": 781.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "质心",
+          "han": 1849,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "刚体的转动",
+          "han": 2566,
+          "start": 50,
+          "fig": 2,
+          "tab": 0,
+          "eq": 8
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 4,
+      "fig_area_ratio": 0.04,
+      "volume": "V1",
+      "chapter_no": 19,
+      "title": "质心、转动惯量",
+      "sections": 4,
+      "han": 8380,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 2,
+      "pages": 11,
+      "fig_per_page": 0.36,
+      "han_per_page": 762.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "质心的性质",
+          "han": 3412,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "转动惯量的求法",
+          "han": 1907,
+          "start": 68,
+          "fig": 1,
+          "tab": 2,
+          "eq": 14
+        },
+        {
+          "title": "转动动能",
+          "han": 2111,
+          "start": 197,
+          "fig": 1,
+          "tab": 0,
+          "eq": 5
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 5,
+      "caption_total": 7,
+      "fig_area_ratio": 0.119,
+      "volume": "V1",
+      "chapter_no": 20,
+      "title": "空间转动",
+      "sections": 4,
+      "han": 7457,
+      "blocks": 6,
+      "figures": 7,
+      "tables": 0,
+      "pages": 10,
+      "fig_per_page": 0.7,
+      "han_per_page": 746.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "三维空间中的转矩",
+          "han": 2990,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "回转仪",
+          "han": 2725,
+          "start": 160,
+          "fig": 4,
+          "tab": 0,
+          "eq": 3
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 3,
+      "fig_area_ratio": 0.065,
+      "volume": "V1",
+      "chapter_no": 21,
+      "title": "谐振子",
+      "sections": 5,
+      "han": 5094,
+      "blocks": 2,
+      "figures": 3,
+      "tables": 0,
+      "pages": 8,
+      "fig_per_page": 0.38,
+      "han_per_page": 637.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "谐振子",
+          "han": 2071,
+          "start": 14,
+          "fig": 1,
+          "tab": 0,
+          "eq": 7
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 2,
+      "fig_area_ratio": 0.118,
+      "volume": "V1",
+      "chapter_no": 22,
+      "title": "代数学",
+      "sections": 6,
+      "han": 8511,
+      "blocks": 2,
+      "figures": 2,
+      "tables": 4,
+      "pages": 13,
+      "fig_per_page": 0.15,
+      "han_per_page": 655.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "无理数的近似计算",
+          "han": 2984,
+          "start": 94,
+          "fig": 0,
+          "tab": 2,
+          "eq": 3
+        },
+        {
+          "title": "复数",
+          "han": 1711,
+          "start": 143,
+          "fig": 0,
+          "tab": 1,
+          "eq": 7
+        }
+      ]
+    },
+    {
+      "hard_refs": 2,
+      "caption_rich": 6,
+      "caption_total": 10,
+      "fig_area_ratio": 0.193,
+      "volume": "V1",
+      "chapter_no": 23,
+      "title": "共振",
+      "sections": 4,
+      "han": 7491,
+      "blocks": 7,
+      "figures": 10,
+      "tables": 1,
+      "pages": 12,
+      "fig_per_page": 0.83,
+      "han_per_page": 624.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "电共振",
+          "han": 1724,
+          "start": 167,
+          "fig": 1,
+          "tab": 1,
+          "eq": 9
+        },
+        {
+          "title": "自然界中的共振现象",
+          "han": 2812,
+          "start": 251,
+          "fig": 4,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 6,
+      "fig_area_ratio": 0.095,
+      "volume": "V1",
+      "chapter_no": 24,
+      "title": "瞬变态",
+      "sections": 3,
+      "han": 4419,
+      "blocks": 4,
+      "figures": 6,
+      "tables": 0,
+      "pages": 8,
+      "fig_per_page": 0.75,
+      "han_per_page": 552.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "阻尼振动",
+          "han": 1661,
+          "start": 58,
+          "fig": 1,
+          "tab": 0,
+          "eq": 13
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 6,
+      "fig_area_ratio": 0.093,
+      "volume": "V1",
+      "chapter_no": 25,
+      "title": "线性系统及其综述",
+      "sections": 5,
+      "han": 8993,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.55,
+      "han_per_page": 818.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "解的叠加",
+          "han": 3157,
+          "start": 59,
+          "fig": 4,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "线性系统中的振动",
+          "han": 1667,
+          "start": 126,
+          "fig": 1,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "物理学中的类比",
+          "han": 2027,
+          "start": 154,
+          "fig": 0,
+          "tab": 0,
+          "eq": 5
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 14,
+      "fig_area_ratio": 0.171,
+      "volume": "V1",
+      "chapter_no": 26,
+      "title": "光学：最短时间原理",
+      "sections": 6,
+      "han": 9550,
+      "blocks": 9,
+      "figures": 14,
+      "tables": 2,
+      "pages": 12,
+      "fig_per_page": 1.17,
+      "han_per_page": 796.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "费马最短时间原理",
+          "han": 2053,
+          "start": 84,
+          "fig": 2,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "费马原理的应用",
+          "han": 2967,
+          "start": 139,
+          "fig": 4,
+          "tab": 0,
+          "eq": 2
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 9,
+      "fig_area_ratio": 0.089,
+      "volume": "V1",
+      "chapter_no": 27,
+      "title": "几何光学",
+      "sections": 7,
+      "han": 8045,
+      "blocks": 7,
+      "figures": 9,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.82,
+      "han_per_page": 731.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "球面的焦距",
+          "han": 2513,
+          "start": 23,
+          "fig": 2,
+          "tab": 0,
+          "eq": 5
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 4,
+      "fig_area_ratio": 0.094,
+      "volume": "V1",
+      "chapter_no": 28,
+      "title": "电磁辐射",
+      "sections": 4,
+      "han": 6602,
+      "blocks": 3,
+      "figures": 4,
+      "tables": 0,
+      "pages": 8,
+      "fig_per_page": 0.5,
+      "han_per_page": 825.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "电磁学",
+          "han": 2841,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 4
+        }
+      ]
+    },
+    {
+      "hard_refs": 2,
+      "caption_rich": 8,
+      "caption_total": 10,
+      "fig_area_ratio": 0.144,
+      "volume": "V1",
+      "chapter_no": 29,
+      "title": "干涉",
+      "sections": 5,
+      "han": 7222,
+      "blocks": 8,
+      "figures": 10,
+      "tables": 0,
+      "pages": 10,
+      "fig_per_page": 1.0,
+      "han_per_page": 722.0,
+      "unreferenced_labels": 1,
+      "heavy_sections": [
+        {
+          "title": "两个偶极辐射子",
+          "han": 2704,
+          "start": 105,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "干涉的数学",
+          "han": 2022,
+          "start": 153,
+          "fig": 2,
+          "tab": 0,
+          "eq": 13
+        }
+      ]
+    },
+    {
+      "hard_refs": 1,
+      "caption_rich": 9,
+      "caption_total": 12,
+      "fig_area_ratio": 0.141,
+      "volume": "V1",
+      "chapter_no": 30,
+      "title": "衍射",
+      "sections": 7,
+      "han": 11527,
+      "blocks": 9,
+      "figures": 12,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.86,
+      "han_per_page": 823.0,
+      "unreferenced_labels": 1,
+      "heavy_sections": [
+        {
+          "title": "n个相同振子的合振幅",
+          "han": 2250,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 7
+        },
+        {
+          "title": "衍射光栅",
+          "han": 2725,
+          "start": 82,
+          "fig": 2,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "不透明屏的衍射",
+          "han": 1890,
+          "start": 170,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "振荡电荷组成的平面所产生的场",
+          "han": 1793,
+          "start": 211,
+          "fig": 2,
+          "tab": 0,
+          "eq": 11
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 6,
+      "fig_area_ratio": 0.072,
+      "volume": "V1",
+      "chapter_no": 31,
+      "title": "折射率的起源",
+      "sections": 6,
+      "han": 8964,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 1,
+      "pages": 13,
+      "fig_per_page": 0.46,
+      "han_per_page": 690.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "折射率",
+          "han": 2779,
+          "start": 3,
+          "fig": 3,
+          "tab": 0,
+          "eq": 8
+        },
+        {
+          "title": "色散",
+          "han": 2377,
+          "start": 183,
+          "fig": 2,
+          "tab": 0,
+          "eq": 1
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 3,
+      "fig_area_ratio": 0.053,
+      "volume": "V1",
+      "chapter_no": 32,
+      "title": "辐射阻尼、光的散射",
+      "sections": 5,
+      "han": 8053,
+      "blocks": 3,
+      "figures": 3,
+      "tables": 0,
+      "pages": 10,
+      "fig_per_page": 0.3,
+      "han_per_page": 805.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "独立的辐射源",
+          "han": 1565,
+          "start": 114,
+          "fig": 0,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "光的散射",
+          "han": 3233,
+          "start": 139,
+          "fig": 2,
+          "tab": 0,
+          "eq": 6
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 8,
+      "caption_total": 9,
+      "fig_area_ratio": 0.186,
+      "volume": "V1",
+      "chapter_no": 33,
+      "title": "偏振",
+      "sections": 7,
+      "han": 10333,
+      "blocks": 8,
+      "figures": 9,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.75,
+      "han_per_page": 861.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "光的电矢量",
+          "han": 1691,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "双折射",
+          "han": 2642,
+          "start": 35,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "反射光的强度",
+          "han": 1715,
+          "start": 95,
+          "fig": 1,
+          "tab": 0,
+          "eq": 9
+        },
+        {
+          "title": "反常折射",
+          "han": 2008,
+          "start": 170,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 9,
+      "caption_total": 13,
+      "fig_area_ratio": 0.132,
+      "volume": "V1",
+      "chapter_no": 34,
+      "title": "辐射中的相对论性效应",
+      "sections": 9,
+      "han": 10122,
+      "blocks": 12,
+      "figures": 13,
+      "tables": 0,
+      "pages": 15,
+      "fig_per_page": 0.87,
+      "han_per_page": 675.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "同步辐射",
+          "han": 2032,
+          "start": 82,
+          "fig": 2,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "多普勒效应",
+          "han": 1513,
+          "start": 186,
+          "fig": 1,
+          "tab": 0,
+          "eq": 10
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 5,
+      "caption_total": 10,
+      "fig_area_ratio": 0.183,
+      "volume": "V1",
+      "chapter_no": 35,
+      "title": "色视觉",
+      "sections": 7,
+      "han": 11566,
+      "blocks": 8,
+      "figures": 10,
+      "tables": 0,
+      "pages": 13,
+      "fig_per_page": 0.77,
+      "han_per_page": 890.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "颜色依赖于光的强度",
+          "han": 1520,
+          "start": 31,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "色感觉的测量",
+          "han": 4013,
+          "start": 54,
+          "fig": 0,
+          "tab": 0,
+          "eq": 6
+        },
+        {
+          "title": "色视觉的机制",
+          "han": 1794,
+          "start": 133,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "色视觉的生理化学",
+          "han": 1705,
+          "start": 167,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 2,
+      "caption_rich": 4,
+      "caption_total": 14,
+      "fig_area_ratio": 0.219,
+      "volume": "V1",
+      "chapter_no": 36,
+      "title": "视觉的机制",
+      "sections": 7,
+      "han": 14685,
+      "blocks": 11,
+      "figures": 14,
+      "tables": 1,
+      "pages": 16,
+      "fig_per_page": 0.88,
+      "han_per_page": 918.0,
+      "unreferenced_labels": 1,
+      "heavy_sections": [
+        {
+          "title": "颜色的感觉",
+          "han": 3085,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "眼睛的生理学",
+          "han": 3722,
+          "start": 38,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "（昆虫的）复眼",
+          "han": 2829,
+          "start": 103,
+          "fig": 2,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "视觉的神经学",
+          "han": 3255,
+          "start": 182,
+          "fig": 4,
+          "tab": 1,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 6,
+      "fig_area_ratio": 0.108,
+      "volume": "V1",
+      "chapter_no": 37,
+      "title": "量子行为",
+      "sections": 9,
+      "han": 11484,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.43,
+      "han_per_page": 820.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "追踪电子",
+          "han": 3448,
+          "start": 133,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 1,
+      "caption_rich": 1,
+      "caption_total": 9,
+      "fig_area_ratio": 0.137,
+      "volume": "V1",
+      "chapter_no": 38,
+      "title": "波动观点与粒子观点的关系",
+      "sections": 6,
+      "han": 10250,
+      "blocks": 7,
+      "figures": 9,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.75,
+      "han_per_page": 854.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "位置与动量的测量",
+          "han": 2763,
+          "start": 32,
+          "fig": 2,
+          "tab": 0,
+          "eq": 6
+        },
+        {
+          "title": "哲学含义",
+          "han": 2592,
+          "start": 232,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 4,
+      "fig_area_ratio": 0.025,
+      "volume": "V1",
+      "chapter_no": 39,
+      "title": "气体分子动理论",
+      "sections": 5,
+      "han": 11282,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 0,
+      "pages": 14,
+      "fig_per_page": 0.29,
+      "han_per_page": 806.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "物质的性质",
+          "han": 1742,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "气体的压强",
+          "han": 3376,
+          "start": 27,
+          "fig": 1,
+          "tab": 0,
+          "eq": 15
+        },
+        {
+          "title": "温度和动能",
+          "han": 4064,
+          "start": 164,
+          "fig": 3,
+          "tab": 0,
+          "eq": 4
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 6,
+      "caption_total": 6,
+      "fig_area_ratio": 0.107,
+      "volume": "V1",
+      "chapter_no": 40,
+      "title": "统计力学原理",
+      "sections": 6,
+      "han": 10237,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 1,
+      "pages": 13,
+      "fig_per_page": 0.46,
+      "han_per_page": 787.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "大气的指数变化律",
+          "han": 1686,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "分子的速率分布",
+          "han": 2871,
+          "start": 104,
+          "fig": 2,
+          "tab": 0,
+          "eq": 9
+        },
+        {
+          "title": "气体比热",
+          "han": 1662,
+          "start": 183,
+          "fig": 1,
+          "tab": 1,
+          "eq": 0
+        },
+        {
+          "title": "经典物理的失败",
+          "han": 2034,
+          "start": 223,
+          "fig": 0,
+          "tab": 0,
+          "eq": 2
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 6,
+      "caption_total": 6,
+      "fig_area_ratio": 0.058,
+      "volume": "V1",
+      "chapter_no": 41,
+      "title": "布朗运动",
+      "sections": 4,
+      "han": 10268,
+      "blocks": 6,
+      "figures": 6,
+      "tables": 0,
+      "pages": 13,
+      "fig_per_page": 0.46,
+      "han_per_page": 790.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "能量均分",
+          "han": 2960,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 4
+        },
+        {
+          "title": "辐射的热平衡",
+          "han": 2843,
+          "start": 57,
+          "fig": 2,
+          "tab": 0,
+          "eq": 12
+        },
+        {
+          "title": "能量均分与量子振子",
+          "han": 2306,
+          "start": 159,
+          "fig": 1,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "无规行走",
+          "han": 2159,
+          "start": 212,
+          "fig": 1,
+          "tab": 0,
+          "eq": 11
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 1,
+      "caption_total": 3,
+      "fig_area_ratio": 0.031,
+      "volume": "V1",
+      "chapter_no": 42,
+      "title": "分子动理论的应用",
+      "sections": 5,
+      "han": 10576,
+      "blocks": 3,
+      "figures": 3,
+      "tables": 0,
+      "pages": 13,
+      "fig_per_page": 0.23,
+      "han_per_page": 814.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "蒸发",
+          "han": 3542,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 6
+        },
+        {
+          "title": "热电离",
+          "han": 1897,
+          "start": 77,
+          "fig": 0,
+          "tab": 0,
+          "eq": 5
+        },
+        {
+          "title": "化学动力学",
+          "han": 1542,
+          "start": 113,
+          "fig": 1,
+          "tab": 0,
+          "eq": 4
+        },
+        {
+          "title": "爱因斯坦辐射律",
+          "han": 2639,
+          "start": 153,
+          "fig": 2,
+          "tab": 0,
+          "eq": 8
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 2,
+      "fig_area_ratio": 0.034,
+      "volume": "V1",
+      "chapter_no": 43,
+      "title": "扩散",
+      "sections": 6,
+      "han": 8135,
+      "blocks": 2,
+      "figures": 2,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.17,
+      "han_per_page": 678.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "分子间的碰撞",
+          "han": 2049,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "漂移速率",
+          "han": 1978,
+          "start": 113,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "分子扩散",
+          "han": 1768,
+          "start": 186,
+          "fig": 0,
+          "tab": 0,
+          "eq": 21
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 11,
+      "fig_area_ratio": 0.151,
+      "volume": "V1",
+      "chapter_no": 44,
+      "title": "热力学定律",
+      "sections": 6,
+      "han": 12542,
+      "blocks": 11,
+      "figures": 11,
+      "tables": 1,
+      "pages": 16,
+      "fig_per_page": 0.69,
+      "han_per_page": 784.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "热机、第一定律",
+          "han": 2548,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "第二定律",
+          "han": 1559,
+          "start": 51,
+          "fig": 1,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "可逆机",
+          "han": 2987,
+          "start": 77,
+          "fig": 4,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "理想热机的效率",
+          "han": 1627,
+          "start": 127,
+          "fig": 1,
+          "tab": 0,
+          "eq": 10
+        },
+        {
+          "title": "熵",
+          "han": 2655,
+          "start": 241,
+          "fig": 2,
+          "tab": 1,
+          "eq": 9
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 4,
+      "fig_area_ratio": 0.072,
+      "volume": "V1",
+      "chapter_no": 45,
+      "title": "热力学示例",
+      "sections": 3,
+      "han": 6870,
+      "blocks": 3,
+      "figures": 4,
+      "tables": 0,
+      "pages": 11,
+      "fig_per_page": 0.36,
+      "han_per_page": 625.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "内能",
+          "han": 2318,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 12
+        },
+        {
+          "title": "应用",
+          "han": 2043,
+          "start": 116,
+          "fig": 0,
+          "tab": 0,
+          "eq": 13
+        },
+        {
+          "title": "克劳修斯-克拉珀龙方程",
+          "han": 2509,
+          "start": 192,
+          "fig": 2,
+          "tab": 0,
+          "eq": 13
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 2,
+      "fig_area_ratio": 0.077,
+      "volume": "V1",
+      "chapter_no": 46,
+      "title": "棘轮和掣爪",
+      "sections": 5,
+      "han": 8867,
+      "blocks": 2,
+      "figures": 2,
+      "tables": 1,
+      "pages": 10,
+      "fig_per_page": 0.2,
+      "han_per_page": 887.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "作为热机的棘轮",
+          "han": 2164,
+          "start": 27,
+          "fig": 1,
+          "tab": 1,
+          "eq": 2
+        },
+        {
+          "title": "不可逆性",
+          "han": 1633,
+          "start": 83,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        },
+        {
+          "title": "序与熵",
+          "han": 2194,
+          "start": 115,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 4,
+      "caption_total": 4,
+      "fig_area_ratio": 0.082,
+      "volume": "V1",
+      "chapter_no": 47,
+      "title": "声、波动方程",
+      "sections": 5,
+      "han": 6075,
+      "blocks": 4,
+      "figures": 4,
+      "tables": 0,
+      "pages": 9,
+      "fig_per_page": 0.44,
+      "han_per_page": 675.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "波",
+          "han": 2110,
+          "start": 3,
+          "fig": 2,
+          "tab": 0,
+          "eq": 2
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 3,
+      "caption_total": 6,
+      "fig_area_ratio": 0.073,
+      "volume": "V1",
+      "chapter_no": 48,
+      "title": "拍",
+      "sections": 7,
+      "han": 9361,
+      "blocks": 5,
+      "figures": 6,
+      "tables": 0,
+      "pages": 13,
+      "fig_per_page": 0.46,
+      "han_per_page": 720.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "两列波的相加",
+          "han": 1607,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 8
+        },
+        {
+          "title": "旁频带",
+          "han": 1568,
+          "start": 110,
+          "fig": 1,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "定域波列",
+          "han": 1656,
+          "start": 139,
+          "fig": 0,
+          "tab": 0,
+          "eq": 9
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 5,
+      "fig_area_ratio": 0.163,
+      "volume": "V1",
+      "chapter_no": 49,
+      "title": "波模",
+      "sections": 5,
+      "han": 6585,
+      "blocks": 4,
+      "figures": 5,
+      "tables": 1,
+      "pages": 10,
+      "fig_per_page": 0.5,
+      "han_per_page": 658.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "具有固有频率的约束波",
+          "han": 1674,
+          "start": 45,
+          "fig": 1,
+          "tab": 0,
+          "eq": 2
+        },
+        {
+          "title": "二维波模",
+          "han": 1720,
+          "start": 86,
+          "fig": 1,
+          "tab": 1,
+          "eq": 7
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 5,
+      "fig_area_ratio": 0.079,
+      "volume": "V1",
+      "chapter_no": 50,
+      "title": "谐波",
+      "sections": 6,
+      "han": 7867,
+      "blocks": 4,
+      "figures": 5,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 0.42,
+      "han_per_page": 656.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "乐音",
+          "han": 1557,
+          "start": 3,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "音色与谐和",
+          "han": 1712,
+          "start": 64,
+          "fig": 0,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "傅里叶系数",
+          "han": 1598,
+          "start": 97,
+          "fig": 1,
+          "tab": 0,
+          "eq": 16
+        },
+        {
+          "title": "非线性响应",
+          "han": 1776,
+          "start": 251,
+          "fig": 1,
+          "tab": 0,
+          "eq": 8
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 8,
+      "caption_total": 12,
+      "fig_area_ratio": 0.25,
+      "volume": "V1",
+      "chapter_no": 51,
+      "title": "波",
+      "sections": 4,
+      "han": 9784,
+      "blocks": 12,
+      "figures": 12,
+      "tables": 0,
+      "pages": 12,
+      "fig_per_page": 1.0,
+      "han_per_page": 815.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "冲击波",
+          "han": 2464,
+          "start": 33,
+          "fig": 3,
+          "tab": 0,
+          "eq": 1
+        },
+        {
+          "title": "固体中的波",
+          "han": 3008,
+          "start": 84,
+          "fig": 3,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "表面波",
+          "han": 3042,
+          "start": 129,
+          "fig": 4,
+          "tab": 0,
+          "eq": 3
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 2,
+      "caption_total": 5,
+      "fig_area_ratio": 0.043,
+      "volume": "V1",
+      "chapter_no": 52,
+      "title": "物理定律的对称性",
+      "sections": 9,
+      "han": 13833,
+      "blocks": 4,
+      "figures": 5,
+      "tables": 1,
+      "pages": 14,
+      "fig_per_page": 0.36,
+      "han_per_page": 988.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "空间与时间的对称性",
+          "han": 2789,
+          "start": 28,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "镜面反射",
+          "han": 2775,
+          "start": 71,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "极矢量与轴矢量",
+          "han": 1527,
+          "start": 100,
+          "fig": 2,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "宇称不守恒",
+          "han": 1888,
+          "start": 152,
+          "fig": 1,
+          "tab": 0,
+          "eq": 0
+        },
+        {
+          "title": "反物质",
+          "han": 1523,
+          "start": 181,
+          "fig": 0,
+          "tab": 0,
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 0,
+      "fig_area_ratio": 0.0,
+      "volume": "V2",
+      "chapter_no": 1,
+      "title": "电磁学",
+      "sections": 1,
+      "han": 2912,
+      "blocks": 0,
+      "figures": 0,
+      "tables": 0,
+      "pages": 4,
+      "fig_per_page": 0.0,
+      "han_per_page": 728.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": [
+        {
+          "title": "电力",
+          "han": 2912,
+          "start": 3,
+          "fig": 0,
+          "tab": 0,
+          "eq": 3
+        }
+      ]
+    },
+    {
+      "hard_refs": 0,
+      "caption_rich": 0,
+      "caption_total": 0,
+      "fig_area_ratio": 0.0,
+      "volume": "V3",
+      "chapter_no": 1,
+      "title": "量子行为",
+      "sections": 1,
+      "han": 797,
+      "blocks": 0,
+      "figures": 0,
+      "tables": 0,
+      "pages": 1,
+      "fig_per_page": 0.0,
+      "han_per_page": 797.0,
+      "unreferenced_labels": 0,
+      "heavy_sections": []
+    }
+  ],
+  "section_density": [
+    {
+      "volume": "VolumeI",
+      "chapter_no": 1,
+      "title": "引言",
+      "han": 1799,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 1,
+      "title": "物质是原子构成的",
+      "han": 3381,
+      "figures": 4,
+      "density": 1.18
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 1,
+      "title": "原子过程",
+      "han": 2122,
+      "figures": 3,
+      "density": 1.41
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 1,
+      "title": "化学反应",
+      "han": 3025,
+      "figures": 3,
+      "density": 0.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "title": "引言",
+      "han": 2440,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "title": "1920年以前的物理学",
+      "han": 3513,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "title": "量子物理学",
+      "han": 3049,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 2,
+      "title": "原子核与粒子",
+      "han": 3118,
+      "figures": 1,
+      "density": 0.32
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "引言",
+      "han": 357,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "化学",
+      "han": 995,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "生物学",
+      "han": 5083,
+      "figures": 2,
+      "density": 0.39
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "天文学",
+      "han": 1618,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "地质学",
+      "han": 1080,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "心理学",
+      "han": 781,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 3,
+      "title": "情况何以会如此",
+      "han": 1474,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 4,
+      "title": "什么是能量",
+      "han": 1552,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 4,
+      "title": "重力势能",
+      "han": 3774,
+      "figures": 6,
+      "density": 1.59
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 4,
+      "title": "动能",
+      "han": 618,
+      "figures": 1,
+      "density": 1.62
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 4,
+      "title": "能量的其他形式",
+      "han": 2886,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "运动",
+      "han": 688,
+      "figures": 1,
+      "density": 1.45
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "时间",
+      "han": 886,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "短的时间",
+      "han": 1491,
+      "figures": 1,
+      "density": 0.67
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "长的时间",
+      "han": 1429,
+      "figures": 1,
+      "density": 0.7
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "时间的单位和标准",
+      "han": 860,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "长的距离",
+      "han": 1992,
+      "figures": 5,
+      "density": 2.51
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 5,
+      "title": "短的距离",
+      "han": 1822,
+      "figures": 2,
+      "density": 1.1
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 6,
+      "title": "机会和可能性",
+      "han": 2093,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 6,
+      "title": "起伏",
+      "han": 1747,
+      "figures": 4,
+      "density": 2.29
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 6,
+      "title": "无规行走",
+      "han": 2060,
+      "figures": 2,
+      "density": 0.97
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 6,
+      "title": "概率分布",
+      "han": 1938,
+      "figures": 3,
+      "density": 1.55
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 6,
+      "title": "测不准原理",
+      "han": 1434,
+      "figures": 2,
+      "density": 1.39
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "行星运动",
+      "han": 851,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "开普勒定律",
+      "han": 758,
+      "figures": 2,
+      "density": 2.64
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "动力学的发展",
+      "han": 814,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "牛顿引力定律",
+      "han": 2692,
+      "figures": 3,
+      "density": 1.11
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "万有引力",
+      "han": 2877,
+      "figures": 7,
+      "density": 2.43
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "卡文迪什实验",
+      "han": 756,
+      "figures": 1,
+      "density": 1.32
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "什么是引力",
+      "han": 2565,
+      "figures": 1,
+      "density": 0.39
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 7,
+      "title": "引力和相对论",
+      "han": 661,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "title": "运动的描述",
+      "han": 2091,
+      "figures": 2,
+      "density": 0.96
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "title": "速率",
+      "han": 3279,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "title": "速率作为导数",
+      "han": 875,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "title": "距离作为积分",
+      "han": 1009,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 8,
+      "title": "加速度",
+      "han": 1788,
+      "figures": 2,
+      "density": 1.12
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "动量和力",
+      "han": 1723,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "速率",
+      "han": 329,
+      "figures": 1,
+      "density": 3.04
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "速度、加速度以及力的分量",
+      "han": 616,
+      "figures": 1,
+      "density": 1.62
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "什么是力",
+      "han": 788,
+      "figures": 1,
+      "density": 1.27
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "动力学方程的含义",
+      "han": 559,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "方程的数值解",
+      "han": 1037,
+      "figures": 1,
+      "density": 0.96
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 9,
+      "title": "行星运动",
+      "han": 1695,
+      "figures": 2,
+      "density": 1.18
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 10,
+      "title": "牛顿第三定律",
+      "han": 1659,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 10,
+      "title": "动量守恒",
+      "han": 2685,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 10,
+      "title": "动量是守恒的",
+      "han": 2938,
+      "figures": 8,
+      "density": 2.72
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 10,
+      "title": "动量和能量",
+      "han": 1431,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 10,
+      "title": "相对论性动量",
+      "han": 1411,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "物理学中的对称性",
+      "han": 979,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "平移",
+      "han": 1031,
+      "figures": 1,
+      "density": 0.97
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "转动",
+      "han": 1667,
+      "figures": 2,
+      "density": 1.2
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "矢量",
+      "han": 1452,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "矢量代数",
+      "han": 1234,
+      "figures": 3,
+      "density": 2.43
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "牛顿定律的矢量表示法",
+      "han": 906,
+      "figures": 2,
+      "density": 2.21
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 11,
+      "title": "矢量的标积",
+      "han": 1361,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "什么是力",
+      "han": 2816,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "摩擦力",
+      "han": 3291,
+      "figures": 1,
+      "density": 0.3
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "分子力",
+      "han": 1549,
+      "figures": 1,
+      "density": 0.65
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "基本力、场",
+      "han": 3371,
+      "figures": 1,
+      "density": 0.3
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "赝力",
+      "han": 1675,
+      "figures": 1,
+      "density": 0.6
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 12,
+      "title": "核力",
+      "han": 439,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 13,
+      "title": "落体的能量",
+      "han": 2159,
+      "figures": 1,
+      "density": 0.46
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 13,
+      "title": "万有引力所做的功",
+      "han": 2608,
+      "figures": 3,
+      "density": 1.15
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 13,
+      "title": "能量的求和",
+      "han": 860,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 13,
+      "title": "巨大物体的引力场",
+      "han": 1770,
+      "figures": 2,
+      "density": 1.13
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 14,
+      "title": "功",
+      "han": 2023,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 14,
+      "title": "约束运动",
+      "han": 546,
+      "figures": 1,
+      "density": 1.83
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 14,
+      "title": "保守力",
+      "han": 2786,
+      "figures": 2,
+      "density": 0.72
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 14,
+      "title": "非保守力",
+      "han": 1309,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 14,
+      "title": "势与场",
+      "han": 2447,
+      "figures": 2,
+      "density": 0.82
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "相对性原理",
+      "han": 1950,
+      "figures": 1,
+      "density": 0.51
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "洛伦兹变换",
+      "han": 820,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "迈克耳逊-莫雷实验",
+      "han": 1610,
+      "figures": 1,
+      "density": 0.62
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "时间的变换",
+      "han": 2139,
+      "figures": 1,
+      "density": 0.47
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "洛伦兹收缩",
+      "han": 321,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "同时性",
+      "han": 622,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "四维矢量",
+      "han": 543,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "相对论力学",
+      "han": 1206,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 15,
+      "title": "质能相当性",
+      "han": 837,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 16,
+      "title": "相对论与哲学家",
+      "han": 2861,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 16,
+      "title": "孪生子佯谬",
+      "han": 868,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 16,
+      "title": "速度的变换",
+      "han": 1831,
+      "figures": 1,
+      "density": 0.55
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 16,
+      "title": "相对论性质量",
+      "han": 2484,
+      "figures": 3,
+      "density": 1.21
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 16,
+      "title": "相对论性能量",
+      "han": 1850,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 17,
+      "title": "时空几何学",
+      "han": 1942,
+      "figures": 2,
+      "density": 1.03
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 17,
+      "title": "时空间隔",
+      "han": 1318,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 17,
+      "title": "过去，现在和将来",
+      "han": 1206,
+      "figures": 1,
+      "density": 0.83
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 17,
+      "title": "四维矢量的进一步讨论",
+      "han": 1437,
+      "figures": 1,
+      "density": 0.7
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 17,
+      "title": "四维矢量代数",
+      "han": 1670,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 18,
+      "title": "质心",
+      "han": 1849,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 18,
+      "title": "刚体的转动",
+      "han": 2566,
+      "figures": 2,
+      "density": 0.78
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 18,
+      "title": "角动量",
+      "han": 1236,
+      "figures": 1,
+      "density": 0.81
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 18,
+      "title": "角动量守恒",
+      "han": 1379,
+      "figures": 1,
+      "density": 0.73
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 19,
+      "title": "质心的性质",
+      "han": 3412,
+      "figures": 1,
+      "density": 0.29
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 19,
+      "title": "质心位置的确定",
+      "han": 950,
+      "figures": 1,
+      "density": 1.05
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 19,
+      "title": "转动惯量的求法",
+      "han": 1907,
+      "figures": 1,
+      "density": 0.52
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 19,
+      "title": "转动动能",
+      "han": 2111,
+      "figures": 1,
+      "density": 0.47
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 20,
+      "title": "三维空间中的转矩",
+      "han": 2990,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 20,
+      "title": "用叉积表示的转动方程式",
+      "han": 837,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 20,
+      "title": "回转仪",
+      "han": 2725,
+      "figures": 5,
+      "density": 1.83
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 20,
+      "title": "固体的角动量",
+      "han": 905,
+      "figures": 2,
+      "density": 2.21
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 21,
+      "title": "线性微分方程",
+      "han": 675,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 21,
+      "title": "谐振子",
+      "han": 2071,
+      "figures": 1,
+      "density": 0.48
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 21,
+      "title": "简谐运动和圆周运动",
+      "han": 906,
+      "figures": 2,
+      "density": 2.21
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 21,
+      "title": "初始条件",
+      "han": 696,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 21,
+      "title": "受迫振动",
+      "han": 746,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "加法和乘法",
+      "han": 1256,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "逆运算",
+      "han": 403,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "抽象和推广",
+      "han": 1151,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "无理数的近似计算",
+      "han": 2984,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "复数",
+      "han": 1711,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 22,
+      "title": "虚指数",
+      "han": 1006,
+      "figures": 2,
+      "density": 1.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 23,
+      "title": "复数和简谐运动",
+      "han": 1481,
+      "figures": 1,
+      "density": 0.68
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 23,
+      "title": "有阻尼的受迫振子",
+      "han": 1474,
+      "figures": 2,
+      "density": 1.36
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 23,
+      "title": "电共振",
+      "han": 1724,
+      "figures": 1,
+      "density": 0.58
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 23,
+      "title": "自然界中的共振现象",
+      "han": 2812,
+      "figures": 6,
+      "density": 2.13
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 24,
+      "title": "振子的能量",
+      "han": 1492,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 24,
+      "title": "阻尼振动",
+      "han": 1661,
+      "figures": 1,
+      "density": 0.6
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 24,
+      "title": "电瞬变态",
+      "han": 1266,
+      "figures": 5,
+      "density": 3.95
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 25,
+      "title": "线性微分方程",
+      "han": 1285,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 25,
+      "title": "解的叠加",
+      "han": 3157,
+      "figures": 4,
+      "density": 1.27
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 25,
+      "title": "线性系统中的振动",
+      "han": 1667,
+      "figures": 1,
+      "density": 0.6
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 25,
+      "title": "物理学中的类比",
+      "han": 2027,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 25,
+      "title": "串联和并联阻抗",
+      "han": 857,
+      "figures": 1,
+      "density": 1.17
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "光",
+      "han": 1416,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "反射与折射",
+      "han": 1029,
+      "figures": 2,
+      "density": 1.94
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "费马最短时间原理",
+      "han": 2053,
+      "figures": 3,
+      "density": 1.46
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "费马原理的应用",
+      "han": 2967,
+      "figures": 7,
+      "density": 2.36
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "费马原理的更精确表述",
+      "han": 1261,
+      "figures": 1,
+      "density": 0.79
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 26,
+      "title": "最短时间原理是怎样起作用的",
+      "han": 824,
+      "figures": 1,
+      "density": 1.21
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "引言",
+      "han": 732,
+      "figures": 1,
+      "density": 1.37
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "球面的焦距",
+      "han": 2513,
+      "figures": 3,
+      "density": 1.19
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "透镜的焦距",
+      "han": 1256,
+      "figures": 2,
+      "density": 1.59
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "放大率",
+      "han": 729,
+      "figures": 1,
+      "density": 1.37
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "透镜组",
+      "han": 728,
+      "figures": 1,
+      "density": 1.37
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "像差",
+      "han": 1091,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 27,
+      "title": "分辨本领",
+      "han": 996,
+      "figures": 1,
+      "density": 1.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 28,
+      "title": "电磁学",
+      "han": 2841,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 28,
+      "title": "辐射",
+      "han": 1227,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 28,
+      "title": "偶极辐射子",
+      "han": 1455,
+      "figures": 2,
+      "density": 1.37
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 28,
+      "title": "干涉",
+      "han": 1079,
+      "figures": 2,
+      "density": 1.85
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 29,
+      "title": "电磁波",
+      "han": 1002,
+      "figures": 3,
+      "density": 2.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 29,
+      "title": "辐射的能量",
+      "han": 694,
+      "figures": 1,
+      "density": 1.44
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 29,
+      "title": "正弦波",
+      "han": 800,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 29,
+      "title": "两个偶极辐射子",
+      "han": 2704,
+      "figures": 4,
+      "density": 1.48
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 29,
+      "title": "干涉的数学",
+      "han": 2022,
+      "figures": 2,
+      "density": 0.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "n个相同振子的合振幅",
+      "han": 2250,
+      "figures": 3,
+      "density": 1.33
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "衍射光栅",
+      "han": 2725,
+      "figures": 2,
+      "density": 0.73
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "光栅的分辨本领",
+      "han": 757,
+      "figures": 1,
+      "density": 1.32
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "抛物形天线",
+      "han": 1243,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "彩色薄膜、晶体",
+      "han": 869,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "不透明屏的衍射",
+      "han": 1890,
+      "figures": 3,
+      "density": 1.59
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 30,
+      "title": "振荡电荷组成的平面所产生的场",
+      "han": 1793,
+      "figures": 3,
+      "density": 1.67
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "折射率",
+      "han": 2779,
+      "figures": 3,
+      "density": 1.08
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "物质引起的场",
+      "han": 1072,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "色散",
+      "han": 2377,
+      "figures": 2,
+      "density": 0.84
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "吸收",
+      "han": 696,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "电波所携带的能量",
+      "han": 879,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 31,
+      "title": "屏的衍射",
+      "han": 1161,
+      "figures": 1,
+      "density": 0.86
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 32,
+      "title": "辐射电阻",
+      "han": 1263,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 32,
+      "title": "能量辐射率",
+      "han": 1102,
+      "figures": 1,
+      "density": 0.91
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 32,
+      "title": "辐射阻尼",
+      "han": 890,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 32,
+      "title": "独立的辐射源",
+      "han": 1565,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 32,
+      "title": "光的散射",
+      "han": 3233,
+      "figures": 2,
+      "density": 0.62
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "光的电矢量",
+      "han": 1691,
+      "figures": 2,
+      "density": 1.18
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "散射光的偏振性",
+      "han": 216,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "双折射",
+      "han": 2642,
+      "figures": 1,
+      "density": 0.38
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "起偏振器",
+      "han": 1186,
+      "figures": 1,
+      "density": 0.84
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "旋光性",
+      "han": 875,
+      "figures": 1,
+      "density": 1.14
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "反射光的强度",
+      "han": 1715,
+      "figures": 1,
+      "density": 0.58
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 33,
+      "title": "反常折射",
+      "han": 2008,
+      "figures": 3,
+      "density": 1.49
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "运动辐射源",
+      "han": 1211,
+      "figures": 1,
+      "density": 0.83
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "求“表观”运动",
+      "han": 1103,
+      "figures": 2,
+      "density": 1.81
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "同步辐射",
+      "han": 2032,
+      "figures": 3,
+      "density": 1.48
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "宇宙中的同步辐射",
+      "han": 998,
+      "figures": 2,
+      "density": 2.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "轫致辐射",
+      "han": 474,
+      "figures": 1,
+      "density": 2.11
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "多普勒效应",
+      "han": 1513,
+      "figures": 1,
+      "density": 0.66
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "ω，k四元矢量",
+      "han": 1014,
+      "figures": 1,
+      "density": 0.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "光行差",
+      "han": 612,
+      "figures": 1,
+      "density": 1.63
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 34,
+      "title": "光的动量",
+      "han": 1165,
+      "figures": 1,
+      "density": 0.86
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "人眼",
+      "han": 1433,
+      "figures": 2,
+      "density": 1.4
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "颜色依赖于光的强度",
+      "han": 1520,
+      "figures": 1,
+      "density": 0.66
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "色感觉的测量",
+      "han": 4013,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "色品图",
+      "han": 1101,
+      "figures": 2,
+      "density": 1.82
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "色视觉的机制",
+      "han": 1794,
+      "figures": 3,
+      "density": 1.67
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "色视觉的生理化学",
+      "han": 1705,
+      "figures": 2,
+      "density": 1.17
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 35,
+      "title": "参考文献",
+      "han": 0,
+      "figures": 0,
+      "density": null
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "颜色的感觉",
+      "han": 3085,
+      "figures": 2,
+      "density": 0.65
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "眼睛的生理学",
+      "han": 3722,
+      "figures": 2,
+      "density": 0.54
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "视杆细胞",
+      "han": 1043,
+      "figures": 2,
+      "density": 1.92
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "（昆虫的）复眼",
+      "han": 2829,
+      "figures": 3,
+      "density": 1.06
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "其他的眼睛",
+      "han": 751,
+      "figures": 1,
+      "density": 1.33
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "视觉的神经学",
+      "han": 3255,
+      "figures": 4,
+      "density": 1.23
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 36,
+      "title": "参考文献",
+      "han": 0,
+      "figures": 0,
+      "density": null
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "原子力学",
+      "han": 1278,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "子弹实验",
+      "han": 1188,
+      "figures": 1,
+      "density": 0.84
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "波的实验",
+      "han": 1127,
+      "figures": 1,
+      "density": 0.89
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "电子的实验",
+      "han": 1029,
+      "figures": 1,
+      "density": 0.97
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "电子波的干涉",
+      "han": 1294,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "追踪电子",
+      "han": 3448,
+      "figures": 2,
+      "density": 0.58
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "量子力学的基本原理",
+      "han": 209,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "小结",
+      "han": 904,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 37,
+      "title": "不确定性原理",
+      "han": 1007,
+      "figures": 1,
+      "density": 0.99
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "概率波幅",
+      "han": 1108,
+      "figures": 1,
+      "density": 0.9
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "位置与动量的测量",
+      "han": 2763,
+      "figures": 2,
+      "density": 0.72
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "晶体衍射",
+      "han": 1331,
+      "figures": 5,
+      "density": 3.76
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "原子的大小",
+      "han": 1498,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "能级",
+      "han": 958,
+      "figures": 1,
+      "density": 1.04
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 38,
+      "title": "哲学含义",
+      "han": 2592,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 39,
+      "title": "物质的性质",
+      "han": 1742,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 39,
+      "title": "气体的压强",
+      "han": 3376,
+      "figures": 1,
+      "density": 0.3
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 39,
+      "title": "辐射的压缩性",
+      "han": 604,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 39,
+      "title": "温度和动能",
+      "han": 4064,
+      "figures": 3,
+      "density": 0.74
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 39,
+      "title": "理想气体定律",
+      "han": 1496,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "大气的指数变化律",
+      "han": 1686,
+      "figures": 2,
+      "density": 1.19
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "玻尔兹曼定律",
+      "han": 753,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "液体的蒸发",
+      "han": 1231,
+      "figures": 1,
+      "density": 0.81
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "分子的速率分布",
+      "han": 2871,
+      "figures": 2,
+      "density": 0.7
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "气体比热",
+      "han": 1662,
+      "figures": 1,
+      "density": 0.6
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 40,
+      "title": "经典物理的失败",
+      "han": 2034,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 41,
+      "title": "能量均分",
+      "han": 2960,
+      "figures": 2,
+      "density": 0.68
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 41,
+      "title": "辐射的热平衡",
+      "han": 2843,
+      "figures": 2,
+      "density": 0.7
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 41,
+      "title": "能量均分与量子振子",
+      "han": 2306,
+      "figures": 1,
+      "density": 0.43
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 41,
+      "title": "无规行走",
+      "han": 2159,
+      "figures": 1,
+      "density": 0.46
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 42,
+      "title": "蒸发",
+      "han": 3542,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 42,
+      "title": "热离子发射",
+      "han": 956,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 42,
+      "title": "热电离",
+      "han": 1897,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 42,
+      "title": "化学动力学",
+      "han": 1542,
+      "figures": 1,
+      "density": 0.65
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 42,
+      "title": "爱因斯坦辐射律",
+      "han": 2639,
+      "figures": 2,
+      "density": 0.76
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "分子间的碰撞",
+      "han": 2049,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "平均自由程",
+      "han": 1052,
+      "figures": 1,
+      "density": 0.95
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "漂移速率",
+      "han": 1978,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "离子电导率",
+      "han": 668,
+      "figures": 1,
+      "density": 1.5
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "分子扩散",
+      "han": 1768,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 43,
+      "title": "热导率",
+      "han": 620,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "热机、第一定律",
+      "han": 2548,
+      "figures": 2,
+      "density": 0.78
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "第二定律",
+      "han": 1559,
+      "figures": 1,
+      "density": 0.64
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "可逆机",
+      "han": 2987,
+      "figures": 4,
+      "density": 1.34
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "理想热机的效率",
+      "han": 1627,
+      "figures": 1,
+      "density": 0.61
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "热力学温度",
+      "han": 1166,
+      "figures": 1,
+      "density": 0.86
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 44,
+      "title": "熵",
+      "han": 2655,
+      "figures": 2,
+      "density": 0.75
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 45,
+      "title": "内能",
+      "han": 2318,
+      "figures": 2,
+      "density": 0.86
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 45,
+      "title": "应用",
+      "han": 2043,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 45,
+      "title": "克劳修斯-克拉珀龙方程",
+      "han": 2509,
+      "figures": 2,
+      "density": 0.8
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 46,
+      "title": "棘轮是怎样工作的",
+      "han": 1490,
+      "figures": 1,
+      "density": 0.67
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 46,
+      "title": "作为热机的棘轮",
+      "han": 2164,
+      "figures": 1,
+      "density": 0.46
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 46,
+      "title": "力学中的可逆性",
+      "han": 1386,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 46,
+      "title": "不可逆性",
+      "han": 1633,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 46,
+      "title": "序与熵",
+      "han": 2194,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 47,
+      "title": "波",
+      "han": 2110,
+      "figures": 2,
+      "density": 0.95
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 47,
+      "title": "声的传播",
+      "han": 1190,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 47,
+      "title": "波动方程",
+      "han": 1450,
+      "figures": 2,
+      "density": 1.38
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 47,
+      "title": "波动方程的解",
+      "han": 620,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 47,
+      "title": "声速",
+      "han": 705,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "两列波的相加",
+      "han": 1607,
+      "figures": 1,
+      "density": 0.62
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "拍符和调制",
+      "han": 1394,
+      "figures": 3,
+      "density": 2.15
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "旁频带",
+      "han": 1568,
+      "figures": 1,
+      "density": 0.64
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "定域波列",
+      "han": 1656,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "粒子的概率幅",
+      "han": 975,
+      "figures": 1,
+      "density": 1.03
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "三维空间的波",
+      "han": 825,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 48,
+      "title": "简正模式",
+      "han": 1336,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 49,
+      "title": "波的反射",
+      "han": 1240,
+      "figures": 1,
+      "density": 0.81
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 49,
+      "title": "具有固有频率的约束波",
+      "han": 1674,
+      "figures": 2,
+      "density": 1.19
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 49,
+      "title": "二维波模",
+      "han": 1720,
+      "figures": 1,
+      "density": 0.58
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 49,
+      "title": "耦合摆",
+      "han": 992,
+      "figures": 1,
+      "density": 1.01
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 49,
+      "title": "线性系统",
+      "han": 959,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "乐音",
+      "han": 1557,
+      "figures": 1,
+      "density": 0.64
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "傅里叶级数",
+      "han": 942,
+      "figures": 1,
+      "density": 1.06
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "音色与谐和",
+      "han": 1712,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "傅里叶系数",
+      "han": 1598,
+      "figures": 1,
+      "density": 0.63
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "能量定理",
+      "han": 282,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 50,
+      "title": "非线性响应",
+      "han": 1776,
+      "figures": 2,
+      "density": 1.13
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 51,
+      "title": "舷波",
+      "han": 1270,
+      "figures": 2,
+      "density": 1.57
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 51,
+      "title": "冲击波",
+      "han": 2464,
+      "figures": 3,
+      "density": 1.22
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 51,
+      "title": "固体中的波",
+      "han": 3008,
+      "figures": 3,
+      "density": 1.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 51,
+      "title": "表面波",
+      "han": 3042,
+      "figures": 4,
+      "density": 1.31
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "对称操作",
+      "han": 631,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "空间与时间的对称性",
+      "han": 2789,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "对称性与守恒定律",
+      "han": 591,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "镜面反射",
+      "han": 2775,
+      "figures": 1,
+      "density": 0.36
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "极矢量与轴矢量",
+      "han": 1527,
+      "figures": 3,
+      "density": 1.96
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "哪一只是右手",
+      "han": 1014,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "宇称不守恒",
+      "han": 1888,
+      "figures": 1,
+      "density": 0.53
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "反物质",
+      "han": 1523,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeI",
+      "chapter_no": 52,
+      "title": "对称破缺",
+      "han": 1095,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeII",
+      "chapter_no": 1,
+      "title": "电力",
+      "han": 2912,
+      "figures": 0,
+      "density": 0.0
+    },
+    {
+      "volume": "VolumeIII",
+      "chapter_no": 1,
+      "title": "原子力学",
+      "han": 797,
+      "figures": 0,
+      "density": 0.0
+    }
+  ],
+  "hardcoded_refs": {
+    "total": 72,
+    "by_kind": {
+      "图": 65,
+      "表": 7
+    },
+    "bad": [
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "line": 177,
+        "kind": "表",
+        "number": "8.3",
+        "context": "便了，因为我们知道把什么去掉。为了求出不同类型的函数的微商，有许多规则或公式。这些规则或公式可以记住，也可以在表中找到。表8.3就是一张简表。"
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 8,
+        "line": 201,
+        "kind": "表",
+        "number": "8.4",
+        "context": "我们讨论相反的问题。假定我们不是有一张距离的表，而是有一张从零开始，在不同时刻的速率表。对一个下落的球，它的速率和时间如表8.4所示。"
+      },
+      {
+        "volume": "VolumeI",
+        "chapter_no": 36,
+        "line": 26,
+        "kind": "图",
+        "number": "35.2",
+        "context": "或者还是视网膜可能首先对它进行了某种分析？我们已经看到视网膜的简图，它是一种极端复杂的东西，有着许许多多的相互连接的结（图35.2），因此或许可以对它进行某种分析。"
+      }
+    ]
+  },
+  "cross_chapter_refs": [
+    {
+      "label": "figure:演示垂直和水平运动互不相关的仪器装置",
+      "def_ch": 7,
+      "ref_ch": 9,
+      "ref_line": 85
+    },
+    {
+      "label": "figure:悬于弹簧上的重物运动曲线",
+      "def_ch": 9,
+      "ref_ch": 21,
+      "ref_line": 34
+    },
+    {
+      "label": "figure:光束经过的斜向路程示意图",
+      "def_ch": 15,
+      "ref_ch": 16,
+      "ref_line": 105
+    },
+    {
+      "label": "figure:光束经过的斜向路程示意图",
+      "def_ch": 15,
+      "ref_ch": 16,
+      "ref_line": 105
+    },
+    {
+      "label": "figure:在旋转台上作径向移动的一个点的三个连续位置",
+      "def_ch": 19,
+      "ref_ch": 20,
+      "ref_line": 214
+    },
+    {
+      "label": "figure:rho^2对omega关系图",
+      "def_ch": 23,
+      "ref_ch": 32,
+      "ref_line": 108
+    },
+    {
+      "label": "figure:演示瞬变态的电路",
+      "def_ch": 24,
+      "ref_ch": 25,
+      "ref_line": 200
+    },
+    {
+      "label": "figure:抛物面镜",
+      "def_ch": 26,
+      "ref_ch": 30,
+      "ref_line": 162
+    },
+    {
+      "label": "figure:球截形的侧面积为",
+      "def_ch": 32,
+      "ref_ch": 39,
+      "ref_line": 198
+    },
+    {
+      "label": "figure:眼睛",
+      "def_ch": 35,
+      "ref_ch": 36,
+      "ref_line": 42
+    },
+    {
+      "label": "figure:视网膜的结构（光从下面进入）",
+      "def_ch": 35,
+      "ref_ch": 36,
+      "ref_line": 40
+    }
+  ]
+}
