@@ -1,6 +1,7 @@
 # 第 1 卷剩余章节逐章审查 · 进度总览
 
 > 目标：第 1 卷 **第 4–52 章**逐章对照 eFLP 英文原文精读、修正 OCR/翻译/数字/术语错误，单章编译 0 error，每章留报告并分批提交。
+> **状态（2026-11-03）：第 4–52 章全部完成并提交**；全卷总结（含第 1–3 章与全卷统计）见 [00-summary.md](00-summary.md)。
 > 方法见 [00-playbook.md](00-playbook.md)；第 1–3 章见 `docs/analysis/chapter-{1,2,3}-review.md`。
 > 自动工具：`tools/vol1_archive_align.py`（切分公开中译本参考文本）、`tools/chapter_diff.py`（逐章候选差异）、`tools/make_chapter_check.py`（生成单章编译入口）。
 
@@ -14,7 +15,9 @@
 | 第 4 批 | 28–35（8 章） | ✅ 完成并提交 | 约 93 处（高 10/中 38/低 42） | 各章 0 error / 0 overfull / 0 underfull / 0 missing char / 0 undefined ref | 728 页，0 error，0 missing char，0 未定义引用（Overfull 2 处为既有问题） |
 | 第 5 批 | 36–43（8 章） | ✅ 完成并提交 | 约 79 处（高 2/中 33/低 44） | 各章 0 error / 0 overfull / 0 underfull / 0 missing char / 0 undefined ref | 728 页，0 error，0 missing char，0 未定义引用（Overfull 1 处为既有问题） |
 | 第 6 批 | 44–51（8 章） | ✅ 完成并提交 | 约 105 处（高 28/中 40/低 36，另排版 1） | 各章 0 error / 0 overfull / 0 underfull / 0 missing char / 0 undefined ref | 728 页，0 error，0 missing char，0 未定义引用，0 Overfull |
-| 第 7 批 | 52 | 待开始 | — | — | — |
+| 第 7 批 | 52（含 NEW 块） | ✅ 完成并提交 | 13 处（高 3/中 3/低 7） | 单章 18 页，0 error / 0 overfull / 0 underfull / 0 missing char / 0 undefined ref | 728 页，0 error，0 missing char，0 未定义引用，0 Overfull |
+
+**全卷合计**：第 1–52 章约 **944 处**修正（高 86 / 中 364 / 低 490，另排版/结构 4 项），存疑约 365 项；全书 **728 页，0 error，0 missing character，0 未定义引用，0 Overfull**。总结见 [00-summary.md](00-summary.md)。
 
 ## 第 1 批明细（第 4–11 章）
 
@@ -106,6 +109,14 @@
 
 **批次合计**：约 **105 处**修正（高 28 / 中 40 / 低 36，另排版 1），存疑约 47 项写入各章报告；8 章单章编译 0 error，全书 728 页 0 error、0 missing character、0 未定义引用、0 Overfull。
 
+## 第 7 批明细（第 52 章，全卷末章）
+
+| 章 | 标题 | 问题数（高/中/低） | 编译 | 报告 | 主要修正 |
+|---|---|---|---|---|---|
+| 52 | 物理定律的对称性 | 13（3/3/7） | 18 页 | [chapter-52.md](chapter-52.md) | 「ν 介子→μ 介子和 ν 中微子」；「右旋的东西/右旋的→合适的东西/有倾向性的」（right things/lopsided）；§52.5 小结「左右互换→把坐标系从右手改为左手」；速读路径 τ/θ 与吴健雄实验归位；「还有→还用」。NEW 块 28 对完整保留（仅修正 4 条 NEW 块事实陈述）；`verify_chapter` 失败属预期（内容修正）。 |
+
+**批次合计**：**13 处**修正（高 3 / 中 3 / 低 7），存疑 8 项；单章 18 页 0 error，全书 728 页 0 error、0 missing character、0 未定义引用、0 Overfull。
+
 ## 尚未处理（各章报告"存疑项"汇总，供上游决策）
 
 - 各章底本译法/术语取舍（如第 10 章力符号 f vs F、第 11 章 general→"直观"等），保留原译未改。
@@ -115,3 +126,4 @@
 - 第 28–35 章存疑约 43 项（术语取舍、底本句式、图注与文献体例等），详见各章报告。
 - 第 36–43 章存疑约 42 项（同上），详见各章报告；第 43 章正文原为 LF 行尾（其余各章 CRLF），已在报告中注明。
 - 第 44–51 章存疑约 47 项（术语取舍、底本句式、图注与排版体例等），详见各章报告；这批章节（44–52）正文原为 LF 行尾，均已原样保留。
+- 第 52 章存疑 8 项（人名旧译、底本口吻等），详见 [chapter-52.md](chapter-52.md)；该章 NEW 块 28 对完整保留，内容修正使 `tools/verify_chapter.py` 零删改校验失败属预期。
