@@ -1,0 +1,51 @@
+% !TEX program = xelatex
+% ============================================================
+% 单章编译检查入口：第 2 章《基本物理》
+%
+% 用法：
+%   cd preview/chapter-2
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%
+% 通过标准：0 error、0 overfull、0 missing character。
+% ============================================================
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+            booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable,
+            multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+\providecommand{\numb}[1]{{~\num{#1}~}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+
+\setlength{\parindent}{2em}
+\setlength{\columnsep}{8mm}
+\graphicspath{{../../Figures/VolumeI}}
+\usetikzlibrary{arrows.meta, positioning}
+
+% —— 阅读效率版式层（必须放在导言区最后；第 2 章正文未使用 NEW 宏，加载用于与全书一致）——
+\usepackage{../../styles/readability}
+
+\begin{document}
+
+% 章号：第 2 章 → 1
+\setcounter{chapter}{1}
+
+\input{../../Chapters/VolumeI/Chapter2.tex}
+
+\end{document}
