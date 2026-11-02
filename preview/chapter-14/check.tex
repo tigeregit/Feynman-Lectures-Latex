@@ -1,0 +1,58 @@
+% !TEX program = xelatex
+% ============================================================
+% 单章编译检查入口：第 14 章《基本物理》
+%
+% 用法：
+%   cd preview/chapter-2
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%
+% 通过标准：0 error、0 overfull、0 missing character。
+% ============================================================
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+            booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable,
+            multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+\providecommand{\numb}[1]{{~\num{#1}~}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+
+\setlength{\parindent}{2em}
+\setlength{\columnsep}{8mm}
+\graphicspath{{../../Figures/VolumeI}}
+\usetikzlibrary{arrows.meta, positioning}
+
+% —— 阅读效率版式层（必须放在导言区最后；第 14 章正文未使用 NEW 宏，加载用于与全书一致）——
+\usepackage{../../styles/readability}
+
+\begin{document}
+
+% 章号：第 14 章 → 13
+\setcounter{chapter}{13}
+
+% —— 跨章引用占位：单章编译时第 12/13 章的标签不在，这里补上与全书相同的编号，
+%    仅用于使 \ref 解析（不产生任何排版输出）；全书编译时由第 12/13 章实际标签解析。——
+\makeatletter
+\def\@currentlabel{12.11}\label{Eq:I:12:11}
+\def\@currentlabel{13.14}\label{Eq:I:13:14}
+\makeatother
+
+\input{../../Chapters/VolumeI/Chapter14.tex}
+
+\end{document}

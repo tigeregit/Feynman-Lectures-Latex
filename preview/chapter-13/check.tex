@@ -1,0 +1,61 @@
+% !TEX program = xelatex
+% ============================================================
+% 单章编译检查入口：第 13 章《功与势能（上）》
+%
+% 用法：
+%   cd preview/chapter-13
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%   xelatex -no-mktex=tfm -interaction=nonstopmode -output-directory=build check.tex
+%
+% 通过标准：0 error、0 overfull、0 missing character。
+% ============================================================
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
+
+\usepackage{indentfirst, siunitx, amssymb, ulem, wrapfig, graphicx, chemfig,
+            booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable,
+            multicol, pdfpages, setspace, tabularx}
+\usepackage[no-math]{fontspec}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
+\usepackage[justification=centering]{caption}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hyphenpenalty=100
+\hbadness=10000
+
+\providecommand{\numb}[1]{{~\num{#1}~}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont[AutoFakeBold=true]{SimSun}}
+  {\setCJKmainfont[AutoFakeBold=true]{Songti SC}}
+
+\setlength{\parindent}{2em}
+\setlength{\columnsep}{8mm}
+\graphicspath{{../../Figures/VolumeI}}
+\usetikzlibrary{arrows.meta, positioning}
+
+% —— 阅读效率版式层（必须放在导言区最后；第 13 章正文未使用 NEW 宏，加载用于与全书一致）——
+\usepackage{../../styles/readability}
+
+\begin{document}
+
+% 章号：第 13 章 → 12
+\setcounter{chapter}{12}
+
+% —— 跨章引用占位（单章入口专用）——
+% 第 13 章正文引用了第 9 章的表 9-2（\label{Table:9:2}）。本入口只 \input 第 13 章，
+% 故用“幻影标签”提供与全书一致的编号，使单章编译同样满足 0 undefined reference；
+% 全书编译时该 label 由 Chapter9.tex 正常定义，正文引用不受影响。
+\makeatletter
+\def\@currentlabel{9.2}
+\phantomsection
+\label{Table:9:2}
+\makeatother
+
+\input{../../Chapters/VolumeI/Chapter13.tex}
+
+\end{document}
