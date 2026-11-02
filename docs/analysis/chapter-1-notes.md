@@ -5,6 +5,8 @@
 > 依据：`docs/试点三章改造规范.md`、第 2 章样张（`preview/content-pilot/`）、`styles/readability.sty` 接口
 > 作者：chapter-1-editor　日期：2026-11-01
 
+> ⚠️ **2026-11-02 更新（内容审查后）**：本章正文此后接受了逐句内容审查并修正了 68 处 OCR/漏译/物理化学错误（见 [chapter-1-review.md](chapter-1-review.md)）。因此本文件所述「零删改 PASS」**仅对该次改造任务成立**：`python3 tools/verify_chapter.py 1` 现在会报 FAIL，这是内容修正的预期结果，不是内容错误信号。
+
 ---
 
 ## 0. 结论速览

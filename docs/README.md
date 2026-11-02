@@ -34,6 +34,7 @@
 | [analysis/typography/](analysis/typography/) | 版式实测、样式包设计、全书试编译 | 版式层实测 718 页（+3.31%）、0 error、Underfull 187→0 |
 | [analysis/pilot-notes.md](analysis/pilot-notes.md) | 第 2 章试点说明 | 零删字 PASS；§2-1 段均 221.8→87.1；§2-3 508.2→108.9 |
 | [analysis/chapter-1-notes.md](analysis/chapter-1-notes.md) 等 | 三章改造说明（chapter-1/26/52-notes.md） | 零删改校验、统计、复核点 |
+| [analysis/chapter-1-review.md](analysis/chapter-1-review.md) | **第 1 章精读与内容审查**（OCR/漏译/物理化学错误修正 + 编译验证） | 对照 eFLP 英文原文审出 68 处问题（高 6/中 20/低 42），已全部修正；单章 0 error、全书 726 页 0 error |
 
 ## 3. 可复现工具
 
