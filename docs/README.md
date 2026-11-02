@@ -36,6 +36,7 @@
 | [analysis/chapter-1-notes.md](analysis/chapter-1-notes.md) 等 | 三章改造说明（chapter-1/26/52-notes.md） | 零删改校验、统计、复核点 |
 | [analysis/chapter-1-review.md](analysis/chapter-1-review.md) | **第 1 章精读与内容审查**（OCR/漏译/物理化学错误修正 + 编译验证） | 对照 eFLP 英文原文审出 68 处问题（高 6/中 20/低 42），已全部修正；单章 0 error、全书 726 页 0 error |
 | [analysis/chapter-2-review.md](analysis/chapter-2-review.md) | **第 2 章精读与内容审查**（OCR/源译错误修正 + 表格/图/数字核对） | 审出 81 处问题（高 5/中 20/低 56），已全部修正；补回 QED 漏句、修正 2 处数字；单章 0 error、全书 726 页 0 error |
+| [analysis/chapter-3-review.md](analysis/chapter-3-review.md) | **第 3 章精读与内容审查**（OCR/源译错误修正 + 图/段落完整性核对） | 审出 75 处问题（高 1/中 41/低 33），已全部修正；确认无漏段（英文"第 35 段"实为脚注）；单章 12 页 0 error、全书 726 页 0 error |
 
 ## 3. 可复现工具
 
