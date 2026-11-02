@@ -37,7 +37,7 @@
 | [analysis/chapter-1-review.md](analysis/chapter-1-review.md) | **第 1 章精读与内容审查**（OCR/漏译/物理化学错误修正 + 编译验证） | 对照 eFLP 英文原文审出 68 处问题（高 6/中 20/低 42），已全部修正；单章 0 error、全书 726 页 0 error |
 | [analysis/chapter-2-review.md](analysis/chapter-2-review.md) | **第 2 章精读与内容审查**（OCR/源译错误修正 + 表格/图/数字核对） | 审出 81 处问题（高 5/中 20/低 56），已全部修正；补回 QED 漏句、修正 2 处数字；单章 0 error、全书 726 页 0 error |
 | [analysis/chapter-3-review.md](analysis/chapter-3-review.md) | **第 3 章精读与内容审查**（OCR/源译错误修正 + 图/段落完整性核对） | 审出 75 处问题（高 1/中 41/低 33），已全部修正；确认无漏段（英文"第 35 段"实为脚注）；单章 12 页 0 error、全书 726 页 0 error |
-| [analysis/vol1-review/README.md](analysis/vol1-review/README.md) | **第 1 卷剩余章节逐章审查（第 4–52 章，进行中）**：第 4–43 章已完成 | 第 1–5 批 40 章共约 602 处修正（高 43/中 240/低 316，另结构/格式 3 项），各章单章 0 error、全书 728 页 0 error |
+| [analysis/vol1-review/README.md](analysis/vol1-review/README.md) | **第 1 卷剩余章节逐章审查（第 4–52 章，进行中）**：第 4–51 章已完成 | 第 1–6 批 48 章共约 707 处修正（高 71/中 280/低 352，另排版/结构 4 项），各章单章 0 error、全书 728 页 0 error |
 
 ## 3. 可复现工具
 
